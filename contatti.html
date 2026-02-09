@@ -44,22 +44,24 @@
             <div class="container">
                 <div class="grid-3" style="grid-template-columns: 1fr 2fr; gap: 4rem;">
                     <div>
-                        <h1 class="section-title" style="text-align: left;">Parliamo del vostro progetto</h1>
-                        <p style="margin: 2rem 0; color: var(--text-muted);">Avete una sfida tecnica o un nuovo progetto
+                        <h1 class="section-title" style="text-align: left;" data-i18n="contact_title">Parliamo del
+                            vostro progetto</h1>
+                        <p style="margin: 2rem 0; color: var(--text-muted);" data-i18n="contact_desc">Avete una sfida
+                            tecnica o un nuovo progetto
                             OEM? Il nostro team è pronto a rispondervi in meno di 24 ore.</p>
 
                         <div style="display: flex; flex-direction: column; gap: 1.5rem;">
                             <div>
-                                <h4 style="margin-bottom: 0.5rem;">Ufficio Commerciale</h4>
+                                <h4 style="margin-bottom: 0.5rem;" data-i18n="contact_sales">Ufficio Commerciale</h4>
                                 <p>sales@mypa.it</p>
                             </div>
                             <div>
-                                <h4 style="margin-bottom: 0.5rem;">Ufficio Tecnico</h4>
+                                <h4 style="margin-bottom: 0.5rem;" data-i18n="contact_tech">Ufficio Tecnico</h4>
                                 <p>technical@mypa.it</p>
                             </div>
                             <div>
-                                <h4 style="margin-bottom: 0.5rem;">Sede</h4>
-                                <p>Località Placeholder, 123<br>00000 Città (Prov) - Italy</p>
+                                <h4 style="margin-bottom: 0.5rem;" data-i18n="contact_headquarters">Sede</h4>
+                                <p>Via dell'Artigianato, 10<br>37066 Sommacampagna (VR) - Italy</p>
                             </div>
                         </div>
                     </div>
@@ -68,38 +70,36 @@
                         <form id="contact-form" style="display: flex; flex-direction: column; gap: 1.5rem;">
                             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
                                 <div style="display: flex; flex-direction: column; gap: 0.5rem;">
-                                    <label>Nome
-                                        e Cognome</label>
+                                    <label data-i18n="form_name_label">Nome e Cognome</label>
                                     <input type="text"
                                         style="padding: 0.75rem; border: 1px solid #ddd; border-radius: 4px;">
                                 </div>
                                 <div style="display: flex; flex-direction: column; gap: 0.5rem;">
-                                    <label>Azienda</label>
+                                    <label data-i18n="form_company_label">Azienda</label>
                                     <input type="text"
                                         style="padding: 0.75rem; border: 1px solid #ddd; border-radius: 4px;">
                                 </div>
                             </div>
                             <div style="display: flex; flex-direction: column; gap: 0.5rem;">
-                                <label>Email</label>
+                                <label data-i18n="form_email_label">Email</label>
                                 <input type="email"
                                     style="padding: 0.75rem; border: 1px solid #ddd; border-radius: 4px;">
                             </div>
                             <div style="display: flex; flex-direction: column; gap: 0.5rem;">
-                                <label>Motivo
-                                    della richiesta</label>
+                                <label data-i18n="form_reason_label">Motivo della richiesta</label>
                                 <select style="padding: 0.75rem; border: 1px solid #ddd; border-radius: 4px;">
-                                    <option>Informazioni Tecniche</option>
-                                    <option>Preventivo</option>
-                                    <option>Richiesta Ricambi</option>
-                                    <option>OEM Partnership</option>
+                                    <option data-i18n="form_opt1">Informazioni Tecniche</option>
+                                    <option data-i18n="form_opt2">Preventivo</option>
+                                    <option data-i18n="form_opt3">Richiesta Ricambi</option>
+                                    <option data-i18n="form_opt4">OEM Partnership</option>
                                 </select>
                             </div>
                             <div style="display: flex; flex-direction: column; gap: 0.5rem;">
-                                <label>Messaggio</label>
+                                <label data-i18n="form_message_label">Messaggio</label>
                                 <textarea rows="5"
                                     style="padding: 0.75rem; border: 1px solid #ddd; border-radius: 4px;"></textarea>
                             </div>
-                            <button type="submit" class="btn btn-primary">Invia Richiesta</button>
+                            <button type="submit" class="btn btn-primary" data-i18n="form_send">Invia Richiesta</button>
                         </form>
                     </div>
                 </div>
@@ -107,9 +107,19 @@
         </section>
     </main>
 
-    <footer style="margin-top: auto;">
-        <!-- Footer content -->
-    </footer>
+    <div id="footer-placeholder"></div>
+    <script>
+        fetch('index.html')
+            .then(response => response.text())
+            .then(data => {
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(data, 'text/html');
+                const footer = doc.querySelector('footer');
+                document.getElementById('footer-placeholder').appendChild(footer);
+                // Re-run translations after checking for footer
+                if (window.applyTranslations) window.applyTranslations();
+            });
+    </script>
     <script type="module" src="src/main.js"></script>
 </body>
 
