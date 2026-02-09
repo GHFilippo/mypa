@@ -1,4 +1,3 @@
-import './style.css'
 import { productData } from './productData.js';
 
 // Navigation Scroll Effect
