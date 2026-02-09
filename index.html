@@ -19,13 +19,19 @@
         <img src="images/Logo.png" alt="Mypa Logo">
       </a>
       <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="azienda.html">Azienda</a></li>
-        <li><a href="prodotti.html">Prodotti</a></li>
-        <li><a href="applicazioni.html">Applicazioni</a></li>
-        <li><a href="supporto.html">Supporto Tecnico</a></li>
-        <li><a href="contatti.html">Contatti</a></li>
+        <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+        <li><a href="azienda.html" data-i18n="nav_azienda">Azienda</a></li>
+        <li><a href="prodotti.html" data-i18n="nav_prodotti">Prodotti</a></li>
+        <li><a href="applicazioni.html" data-i18n="nav_applicazioni">Applicazioni</a></li>
+        <li><a href="supporto.html" data-i18n="nav_supporto">Supporto Tecnico</a></li>
+        <li><a href="contatti.html" data-i18n="nav_contatti">Contatti</a></li>
       </ul>
+      <div class="lang-switcher">
+        <button onclick="setLanguage('it')" class="lang-btn" data-lang="it">IT</button>
+        <button onclick="setLanguage('en')" class="lang-btn" data-lang="en">EN</button>
+        <button onclick="setLanguage('tr')" class="lang-btn" data-lang="tr">TR</button>
+        <button onclick="setLanguage('zh')" class="lang-btn" data-lang="zh">ZH</button>
+      </div>
       <div class="mobile-menu-btn" id="mobile-menu-btn">
         <span></span>
         <span></span>
@@ -39,25 +45,27 @@
     <section class="hero" id="home">
       <div class="hero-bg" id="hero-image"></div>
       <div class="container hero-content">
-        <h1 class="hero-title">Precisione in movimento. <br>Il cuore pulsante dei bruciatori.</h1>
-        <p class="hero-subtitle">Da oltre 40 anni, Mypa progetta e produce pompe per bruciatori ad alte prestazioni.
+        <h1 class="hero-title" data-i18n="hero_title">Precisione in movimento. <br>Il cuore pulsante dei bruciatori.
+        </h1>
+        <p class="hero-subtitle" data-i18n="hero_subtitle">Da oltre 40 anni, Mypa progetta e produce pompe per
+          bruciatori ad alte prestazioni.
           Ingegneria italiana e affidabilità globale per OEM e tecnici specializzati.</p>
         <div class="hero-btns">
-          <a href="prodotti.html" class="btn btn-primary">Scopri le nostre pompe</a>
-          <a href="contatti.html" class="btn btn-white-outline">Richiedi Consulenza</a>
+          <a href="prodotti.html" class="btn btn-primary" data-i18n="hero_cta_products">Scopri le nostre pompe</a>
+          <a href="contatti.html" class="btn btn-white-outline" data-i18n="hero_cta_contact">Richiedi Consulenza</a>
         </div>
         <div class="hero-stats">
           <div class="stat-item">
             <h3>40+</h3>
-            <p>Anni di Esperienza</p>
+            <p data-i18n="stat_years">Anni di Esperienza</p>
           </div>
           <div class="stat-item">
             <h3>100%</h3>
-            <p>Collaudo Pre-Uscita</p>
+            <p data-i18n="stat_test">Collaudo Pre-Uscita</p>
           </div>
           <div class="stat-item">
             <h3>OEM</h3>
-            <p>Partner Flessibile</p>
+            <p data-i18n="stat_oem">Partner Flessibile</p>
           </div>
         </div>
       </div>
@@ -66,27 +74,31 @@
     <!-- Why Mypa -->
     <section class="section-padding" id="perche-Mypa">
       <div class="container text-center">
-        <h2 class="section-title">L'eccellenza meccanica al servizio del termico</h2>
-        <p class="section-subtitle">Scegliere Mypa significa affidarsi a un partner che conosce profondamente le sfide
+        <h2 class="section-title" data-i18n="section_why_title">L'eccellenza meccanica al servizio del termico</h2>
+        <p class="section-subtitle" data-i18n="section_why_subtitle">Scegliere Mypa significa affidarsi a un partner che
+          conosce profondamente le sfide
           della combustione. Garantiamo continuità operativa ed efficienza energetica.</p>
 
         <div class="grid-3">
           <div class="card animate-in">
             <div class="card-icon">🇮🇹</div>
-            <h3>Made in Italy</h3>
-            <p>Progettazione e produzione interamente realizzate nei nostri stabilimenti per un controllo totale della
+            <h3 data-i18n="card_italy_title">Made in Italy</h3>
+            <p data-i18n="card_italy_desc">Progettazione e produzione interamente realizzate nei nostri stabilimenti per
+              un controllo totale della
               qualità.</p>
           </div>
           <div class="card animate-in">
             <div class="card-icon">⚙️</div>
-            <h3>Flessibilità Custom</h3>
-            <p>Soluzioni ingegneristiche adattate alle vostre specifiche. Progettiamo pompe su misura per ogni esigenza.
+            <h3 data-i18n="card_custom_title">Flessibilità Custom</h3>
+            <p data-i18n="card_custom_desc">Soluzioni ingegneristiche adattate alle vostre specifiche. Progettiamo pompe
+              su misura per ogni esigenza.
             </p>
           </div>
           <div class="card animate-in">
             <div class="card-icon">📞</div>
-            <h3>Supporto Diretto</h3>
-            <p>Dialogo immediato con i nostri progettisti. Risposte rapide e competenza tecnica senza intermediari.</p>
+            <h3 data-i18n="card_support_title">Supporto Diretto</h3>
+            <p data-i18n="card_support_desc">Dialogo immediato con i nostri progettisti. Risposte rapide e competenza
+              tecnica senza intermediari.</p>
           </div>
         </div>
       </div>
@@ -121,12 +133,14 @@
     <!-- Call to Action -->
     <section class="section-padding" style="background: var(--primary); color: var(--white); text-align: center;">
       <div class="container">
-        <h2 style="color: var(--white); margin-bottom: 1.5rem;">Pronti a ottimizzare i vostri impianti?</h2>
-        <p style="margin-bottom: 2.5rem; opacity: 0.8; max-width: 600px; margin-left: auto; margin-right: auto;">
+        <h2 style="color: var(--white); margin-bottom: 1.5rem;" data-i18n="cta_title">Pronti a ottimizzare i vostri
+          impianti?</h2>
+        <p style="margin-bottom: 2.5rem; opacity: 0.8; max-width: 600px; margin-left: auto; margin-right: auto;"
+          data-i18n="cta_desc">
           Scaricate il catalogo completo o contattate il nostro ufficio tecnico per un preventivo personalizzato.</p>
         <div class="hero-btns" style="justify-content: center;">
-          <a href="#" class="btn btn-primary">Scarica Catalogo PDF</a>
-          <a href="contatti.html" class="btn btn-white-outline">Scrivici Ora</a>
+          <a href="#" class="btn btn-primary" data-i18n="cta_download">Scarica Catalogo PDF</a>
+          <a href="contatti.html" class="btn btn-white-outline" data-i18n="cta_write">Scrivici Ora</a>
         </div>
       </div>
     </section>
@@ -139,11 +153,12 @@
           <div class="footer-logo">
             <img src="images/Logo.png" alt="Mypa Logo" style="height: 30px; filter: brightness(0) invert(1);">
           </div>
-          <p style="opacity: 0.6; font-size: 0.9rem;">Specialisti nella produzione di pompe per bruciatori e sistemi di
+          <p style="opacity: 0.6; font-size: 0.9rem;" data-i18n="footer_desc">Specialisti nella produzione di pompe per
+            bruciatori e sistemi di
             pompaggio industriali dal 1980.</p>
         </div>
         <div class="footer-links">
-          <h4>Link Rapidi</h4>
+          <h4 data-i18n="footer_links_rapid">Link Rapidi</h4>
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="azienda.html">Azienda</a></li>
@@ -152,7 +167,7 @@
           </ul>
         </div>
         <div class="footer-links">
-          <h4>Supporto</h4>
+          <h4 data-i18n="footer_support">Supporto</h4>
           <ul>
             <li><a href="supporto.html">Documentazione</a></li>
             <li><a href="supporto.html#faq">FAQ</a></li>
@@ -160,7 +175,7 @@
           </ul>
         </div>
         <div class="footer-links">
-          <h4>Contatti</h4>
+          <h4 data-i18n="footer_contact">Contatti</h4>
           <p style="font-size: 0.9rem; opacity: 0.6;">
             Località Placeholder, 123<br>
             00000 Città (Prov) - Italy<br>
@@ -170,7 +185,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2024 Mypa S.r.l. - Tutti i diritti riservati.</p>
+        <p data-i18n="footer_rights">© 2024 Mypa S.r.l. - Tutti i diritti riservati.</p>
         <p>P.IVA 00000000000 | Made with Precision</p>
       </div>
     </div>

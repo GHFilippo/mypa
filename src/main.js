@@ -1,4 +1,47 @@
 import { productData } from './productData.js';
+import { translations } from './translations.js';
+
+// --- Multilingual System ---
+let currentLang = localStorage.getItem('mypa_lang') || 'it';
+
+function applyTranslations() {
+  const elements = document.querySelectorAll('[data-i18n]');
+  elements.forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    if (translations[currentLang] && translations[currentLang][key]) {
+      // Use innerHTML for keys that might contain <br> (like hero_title)
+      if (key === 'hero_title') {
+        el.innerHTML = translations[currentLang][key];
+      } else {
+        el.textContent = translations[currentLang][key];
+      }
+    }
+  });
+
+  // Update HTML lang attribute
+  document.documentElement.setAttribute('lang', currentLang);
+
+  // Highlight active lang button
+  document.querySelectorAll('.lang-btn').forEach(btn => {
+    if (btn.getAttribute('data-lang') === currentLang) {
+      btn.classList.add('active');
+    } else {
+      btn.classList.remove('active');
+    }
+  });
+}
+
+window.setLanguage = function (lang) {
+  currentLang = lang;
+  localStorage.setItem('mypa_lang', lang);
+  applyTranslations();
+
+  // If we are on product page, we might need to re-render modals or dynamic lists
+  // Since we use data-series in cards, the modal populate logic will handle it if we update it
+};
+
+// Initialize translations on load
+document.addEventListener('DOMContentLoaded', applyTranslations);
 
 // Navigation Scroll Effect
 const navbar = document.getElementById('navbar');
@@ -63,14 +106,35 @@ const openModal = (seriesId) => {
   const data = productData[seriesId];
   if (!data || !modal) return;
 
+  const getTranslated = (field) => {
+    if (typeof field === 'object' && field !== null) {
+      return field[currentLang] || field['it'] || '';
+    }
+    return field || '';
+  };
+
   // Populate content
   document.getElementById('modal-title').textContent = data.title;
-  document.getElementById('modal-desc').textContent = data.description;
-  document.getElementById('modal-range').textContent = data.range;
+  document.getElementById('modal-desc').textContent = getTranslated(data.description);
+  document.getElementById('modal-range').textContent = getTranslated(data.range);
   document.getElementById('modal-img').src = data.image;
   document.getElementById('modal-img').alt = data.title;
   document.getElementById('modal-pdf').href = data.pdf;
   document.getElementById('modal-request').href = `contatti.html?ref=${seriesId}`;
+
+  // Features list populate
+  const featuresList = document.getElementById('modal-features');
+  if (featuresList) {
+    featuresList.innerHTML = '';
+    const features = getTranslated(data.features);
+    if (Array.isArray(features)) {
+      features.forEach(feat => {
+        const li = document.createElement('li');
+        li.textContent = feat;
+        featuresList.appendChild(li);
+      });
+    }
+  }
 
   // Show modal
   modal.classList.add('active');

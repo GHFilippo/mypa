@@ -116,13 +116,19 @@
         <div class="container nav-content">
             <a href="index.html" class="logo"><img src="images/Logo.png" alt="Mypa Logo"></a>
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="azienda.html">Azienda</a></li>
-                <li><a href="prodotti.html">Prodotti</a></li>
-                <li><a href="applicazioni.html">Applicazioni</a></li>
-                <li><a href="supporto.html">Supporto Tecnico</a></li>
-                <li><a href="contatti.html">Contatti</a></li>
+                <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+                <li><a href="azienda.html" data-i18n="nav_azienda">Azienda</a></li>
+                <li><a href="prodotti.html" data-i18n="nav_prodotti">Prodotti</a></li>
+                <li><a href="applicazioni.html" data-i18n="nav_applicazioni">Applicazioni</a></li>
+                <li><a href="supporto.html" data-i18n="nav_supporto">Supporto Tecnico</a></li>
+                <li><a href="contatti.html" data-i18n="nav_contatti">Contatti</a></li>
             </ul>
+            <div class="lang-switcher">
+                <button onclick="setLanguage('it')" class="lang-btn" data-lang="it">IT</button>
+                <button onclick="setLanguage('en')" class="lang-btn" data-lang="en">EN</button>
+                <button onclick="setLanguage('tr')" class="lang-btn" data-lang="tr">TR</button>
+                <button onclick="setLanguage('zh')" class="lang-btn" data-lang="zh">ZH</button>
+            </div>
             <div class="mobile-menu-btn" id="mobile-menu-btn">
                 <span></span>
                 <span></span>
@@ -143,10 +149,10 @@
                 <!-- CATEGORY 1: Pompe per Gasolio e Kerosene -->
                 <div class="product-category">
                     <div class="category-header">
-                        <h2 class="section-title" style="text-align: left; color: white;">Pompe per Gasolio e Kerosene
-                        </h2>
-                        <p style="color: rgba(255,255,255,0.8);">Soluzioni standard e avanzate per bruciatori di piccola
-                            e media potenza.</p>
+                        <h2 class="section-title" style="text-align: left;" data-i18n="cat_pumps_gasoil_title">Pompe per
+                            Gasolio e Olio</h2>
+                        <p data-i18n="cat_pumps_gasoil_desc">Soluzioni ad alte prestazioni per bruciatori civili e
+                            industriali.</p>
                     </div>
                     <div class="grid-3">
                         <div class="card animate-in" data-series="GB-KB">
@@ -253,9 +259,10 @@
                 <!-- CATEGORY 2: Pompe per Gasolio e Nafta -->
                 <div class="product-category">
                     <div class="category-header" style="margin-top: 6rem;">
-                        <h2 class="section-title" style="text-align: left; color: white;">Pompe per Gasolio e Nafta</h2>
-                        <p style="color: rgba(255,255,255,0.8);">Pompaggio robusto per applicazioni commerciali e
-                            industriali pesanti.</p>
+                        <h2 class="section-title" style="text-align: left; color: white;"
+                            data-i18n="cat_pumps_heavyoil_title">Pompe per Olio Pesante</h2>
+                        <p style="color: rgba(255,255,255,0.8);" data-i18n="cat_pumps_heavyoil_desc">Sistemi robusti
+                            progettati per atomizzazione di fluidi ad alta viscosità.</p>
                     </div>
                     <div class="grid-3">
                         <div class="card animate-in" data-series="AG">
@@ -334,9 +341,9 @@
                 <!-- CATEGORY 3: Soluzioni Industriali e Alta Pressione -->
                 <div class="product-category">
                     <div class="category-header" style="margin-top: 6rem;">
-                        <h2 class="section-title" style="text-align: left; color: white;">Soluzioni Industriali e Alta
-                            Pressione</h2>
-                        <p style="color: rgba(255,255,255,0.8);">Sistemi ad alte prestazioni per bruciatori industriali
+                        <h2 class="section-title" style="text-align: left;" data-i18n="cat_pumps_industrial_title">
+                            Soluzioni Industriali e Alta Pressione</h2>
+                        <p data-i18n="cat_pumps_industrial_desc">Sistemi ad alte prestazioni per bruciatori industriali
                             e processi complessi.</p>
                     </div>
                     <div class="grid-3">
@@ -418,10 +425,10 @@
                 <!-- CATEGORY 4: Regolatori e Controllo Gas -->
                 <div class="product-category">
                     <div class="category-header" style="margin-top: 6rem;">
-                        <h2 class="section-title" style="text-align: left; color: white;">Regolatori e Controllo Gas
-                        </h2>
-                        <p style="color: rgba(255,255,255,0.8);">Precisione assoluta nella gestione della pressione per
-                            sistemi a gas.</p>
+                        <h2 class="section-title" style="text-align: left; color: white;"
+                            data-i18n="cat_gas_control_title">Regolatori e Controllo Gas</h2>
+                        <p style="color: rgba(255,255,255,0.8);" data-i18n="cat_gas_control_desc">Precisione assoluta
+                            nella gestione della pressione per sistemi a gas.</p>
                     </div>
                     <div class="grid-3">
                         <div class="card animate-in" data-series="IRZ">
@@ -491,10 +498,10 @@
                 <!-- CATEGORY 5: Filtri e Filtro-Regolatori Gas -->
                 <div class="product-category">
                     <div class="category-header" style="margin-top: 6rem;">
-                        <h2 class="section-title" style="text-align: left; color: white;">Filtri e Filtro-Regolatori Gas
-                        </h2>
-                        <p style="color: rgba(255,255,255,0.8);">Protezione e regolazione combinata per la massima
-                            efficienza dei componenti.</p>
+                        <h2 class="section-title" style="text-align: left; color: white;"
+                            data-i18n="cat_gas_filters_title">Filtri e Filtro-Regolatori Gas</h2>
+                        <p style="color: rgba(255,255,255,0.8);" data-i18n="cat_gas_filters_desc">Protezione e
+                            stabilizzazione per ogni linea gas industriale.</p>
                     </div>
                     <div class="grid-3">
                         <div class="card animate-in" data-series="IFR3-5">
@@ -543,10 +550,10 @@
                 <!-- CATEGORY 6: Elettrovalvole Gas -->
                 <div class="product-category">
                     <div class="category-header" style="margin-top: 6rem;">
-                        <h2 class="section-title" style="text-align: left; color: white;">Elettrovalvole Gas e Sicurezza
-                        </h2>
-                        <p style="color: rgba(255,255,255,0.8);">Sistemi di intercettazione automatica e manuale
-                            certificati ATEX.</p>
+                        <h2 class="section-title" style="text-align: left; color: white;"
+                            data-i18n="cat_gas_valves_title">Elettrovalvole Gas e Sicurezza</h2>
+                        <p style="color: rgba(255,255,255,0.8);" data-i18n="cat_gas_valves_desc">Affidabilità estrema
+                            per la gestione dei flussi e blocco di sicurezza.</p>
                     </div>
                     <div class="grid-3">
                         <div class="card animate-in" data-series="IENA">
@@ -596,8 +603,10 @@
                             <p>Elettrovalvola cut-off con tenuta perfetta.</p>
                             <div class="prod-card-meta">Funzione: <strong>Sicurezza Tenuta</strong></div>
                             <div class="card-actions">
-                                <a href="contatti.html?ref=PT" class="btn btn-small btn-request">Richiedi Info</a>
-                                <a href="pdf/PT.pdf" target="_blank" class="btn btn-small btn-catalog">Catalogo</a>
+                                <a href="contatti.html" class="btn btn-small btn-request"
+                                    data-i18n="btn_request">Richiedi Info</a>
+                                <a href="pdf/PT.pdf" target="_blank" class="btn btn-small btn-catalog"
+                                    data-i18n="btn_catalog">Catalogo</a>
                             </div>
                         </div>
                     </div>
@@ -639,33 +648,48 @@
         </div>
     </div>
 
-    <footer style="margin-top: 0;">
+    <footer>
         <div class="container">
             <div class="footer-content">
                 <div class="footer-info">
-                    <div class="footer-logo"
-                        style="color: white; font-weight: 800; font-size: 1.5rem; letter-spacing: -1px;">MYPA <span
-                            style="font-weight: 300; opacity: 0.8;">S.r.l.</span></div>
-                    <p style="opacity: 0.6; font-size: 0.9rem;">Eccellenza meccanica italiana dal 1980.</p>
+                    <div class="footer-logo">
+                        <img src="images/Logo.png" alt="Mypa Logo"
+                            style="height: 30px; filter: brightness(0) invert(1);">
+                    </div>
+                    <p style="opacity: 0.6; font-size: 0.9rem;" data-i18n="footer_desc">Specialisti nella produzione di
+                        pompe per bruciatori e sistemi di
+                        pompaggio industriali dal 1980.</p>
                 </div>
                 <div class="footer-links">
-                    <h4>Link Veloci</h4>
+                    <h4 data-i18n="footer_links_rapid">Link Rapidi</h4>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="azienda.html">Azienda</a></li>
-                        <li><a href="prodotti.html">Prodotti</a></li>
+                        <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+                        <li><a href="azienda.html" data-i18n="nav_azienda">Azienda</a></li>
+                        <li><a href="prodotti.html" data-i18n="nav_prodotti">Prodotti</a></li>
+                        <li><a href="applicazioni.html" data-i18n="nav_applicazioni">Applicazioni</a></li>
                     </ul>
                 </div>
                 <div class="footer-links">
-                    <h4>Supporto</h4>
+                    <h4 data-i18n="footer_support">Supporto</h4>
                     <ul>
-                        <li><a href="supporto.html">FAQ</a></li>
-                        <li><a href="contatti.html">Richiedi Assistenza</a></li>
+                        <li><a href="supporto.html">Documentazione</a></li>
+                        <li><a href="supporto.html#faq">FAQ</a></li>
+                        <li><a href="contatti.html" data-i18n="nav_contatti">Contatti</a></li>
                     </ul>
+                </div>
+                <div class="footer-links">
+                    <h4 data-i18n="footer_contact">Contatti</h4>
+                    <p style="font-size: 0.9rem; opacity: 0.6;">
+                        Località Placeholder, 123<br>
+                        00000 Città (Prov) - Italy<br>
+                        T: +39 000 000 000<br>
+                        E: sales@Mypa.it
+                    </p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Mypa S.r.l.</p>
+                <p data-i18n="footer_rights">© 2024 Mypa S.r.l. - Tutti i diritti riservati.</p>
+                <p>P.IVA 00000000000 | Made with Precision</p>
             </div>
         </div>
     </footer>

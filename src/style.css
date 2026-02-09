@@ -222,6 +222,49 @@ nav:not(.scrolled):not(.nav-white) .nav-links a {
   width: 100%;
 }
 
+/* Language Switcher */
+.lang-switcher {
+  display: flex;
+  gap: 0.5rem;
+  margin-left: 1.5rem;
+}
+
+.lang-btn {
+  background: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0.2rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: var(--transition);
+  color: var(--text-dark);
+}
+
+#navbar:not(.scrolled) .lang-btn {
+  color: white;
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.lang-btn:hover {
+  background: var(--accent);
+  color: white !important;
+  border-color: var(--accent);
+}
+
+.lang-btn.active {
+  background: var(--primary);
+  color: white !important;
+  border-color: var(--primary);
+}
+
+@media (max-width: 768px) {
+  .lang-switcher {
+    margin: 1rem 0;
+    justify-content: center;
+  }
+}
+
 .mobile-menu-btn {
   display: none;
   flex-direction: column;

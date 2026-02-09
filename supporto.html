@@ -14,12 +14,21 @@
         <div class="container nav-content">
             <a href="index.html" class="logo"><img src="images/Logo.png" alt="Mypa Logo"></a>
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="azienda.html">Azienda</a></li>
-                <li><a href="prodotti.html">Prodotti</a></li>
-                <li><a href="applicazioni.html">Applicazioni</a></li>
-                <li><a href="supporto.html">Supporto Tecnico</a></li>
-                <li><a href="contatti.html">Contatti</a></li>
+                <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+                <li><a href="azienda.html" data-i18n="nav_about">Azienda</a></li>
+                <li><a href="prodotti.html" data-i18n="nav_products">Prodotti</a></li>
+                <li><a href="applicazioni.html" data-i18n="nav_apps">Applicazioni</a></li>
+                <li><a href="supporto.html" class="active" data-i18n="nav_support">Supporto Tecnico</a></li>
+                <li><a href="contatti.html" data-i18n="nav_contact">Contatti</a></li>
+                <!-- Language Switcher -->
+                <li class="ms-lg-3">
+                    <div class="lang-switcher">
+                        <button class="lang-btn active" onclick="setLanguage('it')">IT</button>
+                        <button class="lang-btn" onclick="setLanguage('en')">EN</button>
+                        <button class="lang-btn" onclick="setLanguage('tr')">TR</button>
+                        <button class="lang-btn" onclick="setLanguage('zh')">ZH</button>
+                    </div>
+                </li>
             </ul>
             <div class="mobile-menu-btn" id="mobile-menu-btn">
                 <span></span>
@@ -32,52 +41,62 @@
     <main style="padding-top: var(--nav-height);">
         <section class="section-padding">
             <div class="container">
-                <h1 class="section-title" style="text-align: left;">Supporto e Download</h1>
-                <p style="margin-bottom: 4rem; color: var(--text-muted); max-width: 600px;">Risposte alle domande più
+                <h1 class="section-title" style="text-align: left;" data-i18n="support_title">Supporto e Download</h1>
+                <p style="margin-bottom: 4rem; color: var(--text-muted); max-width: 600px;" data-i18n="support_desc">
+                    Risposte alle domande più
                     frequenti e accesso rapido alla documentazione tecnica per installatori e manutentori.</p>
 
                 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem;">
                     <div>
-                        <h2 style="margin-bottom: 2rem;">Domande Frequenti</h2>
+                        <h2 style="margin-bottom: 2rem;" data-i18n="support_faq_title">Domande Frequenti</h2>
                         <div style="display: flex; flex-direction: column; gap: 1.5rem;">
                             <div class="card" style="padding: 1.5rem;">
-                                <h4 style="color: var(--accent);">Come scelgo il senso di rotazione corretto?</h4>
-                                <p style="font-size: 0.9rem; margin-top: 0.5rem;">Il senso di rotazione è indicato sulla
+                                <h4 style="color: var(--accent);" data-i18n="support_faq1_q">Come scelgo il senso di
+                                    rotazione corretto?</h4>
+                                <p style="font-size: 0.9rem; margin-top: 0.5rem;" data-i18n="support_faq1_a">Il senso di
+                                    rotazione è indicato sulla
                                     targhetta (Visto dal lato dell'albero). Forniamo modelli DX e SX per ogni serie.</p>
                             </div>
                             <div class="card" style="padding: 1.5rem;">
-                                <h4 style="color: var(--accent);">Compatibilità Bio-fuel?</h4>
-                                <p style="font-size: 0.9rem; margin-top: 0.5rem;">Sì, testate fino al 20%. Per
+                                <h4 style="color: var(--accent);" data-i18n="support_faq2_q">Compatibilità Bio-fuel?
+                                </h4>
+                                <p style="font-size: 0.9rem; margin-top: 0.5rem;" data-i18n="support_faq2_a">Sì, testate
+                                    fino al 20%. Per
                                     percentuali superiori offriamo guarnizioni speciali in Viton.</p>
                             </div>
                             <div class="card" style="padding: 1.5rem;">
-                                <h4 style="color: var(--accent);">Manutenzione filtro?</h4>
-                                <p style="font-size: 0.9rem; margin-top: 0.5rem;">Consigliamo un'ispezione ogni 1000 ore
+                                <h4 style="color: var(--accent);" data-i18n="support_faq3_q">Manutenzione filtro?</h4>
+                                <p style="font-size: 0.9rem; margin-top: 0.5rem;" data-i18n="support_faq3_a">Consigliamo
+                                    un'ispezione ogni 1000 ore
                                     o all'inizio di ogni stagione invernale.</p>
                             </div>
                         </div>
                     </div>
 
                     <div style="background-color: var(--bg-light); padding: 3rem; border-radius: 8px;">
-                        <h2 style="margin-bottom: 2rem;">Download Center</h2>
+                        <h2 style="margin-bottom: 2rem;" data-i18n="support_docs_title">Download Center</h2>
                         <ul style="display: flex; flex-direction: column; gap: 1.5rem;">
                             <li>
-                                <h4 style="margin-bottom: 0.25rem;">Catalogo Generale 2024</h4>
+                                <h4 style="margin-bottom: 0.25rem;" data-i18n="support_docs_item1">Catalogo Generale
+                                    2024</h4>
                                 <a href="#" style="color: var(--accent); font-weight: 600;">Download PDF (12MB) ↓</a>
                             </li>
                             <li>
-                                <h4 style="margin-bottom: 0.25rem;">Guida Manutenzione Serie XP</h4>
+                                <h4 style="margin-bottom: 0.25rem;" data-i18n="support_docs_item2">Guida Manutenzione
+                                    Serie XP</h4>
                                 <a href="#" style="color: var(--accent); font-weight: 600;">Download PDF (4MB) ↓</a>
                             </li>
                             <li>
-                                <h4 style="margin-bottom: 0.25rem;">Certificazioni ISO & CE</h4>
+                                <h4 style="margin-bottom: 0.25rem;" data-i18n="support_docs_item3">Certificazioni ISO &
+                                    CE</h4>
                                 <a href="#" style="color: var(--accent); font-weight: 600;">Download ZIP ↓</a>
                             </li>
                         </ul>
 
                         <div style="margin-top: 3rem; border-top: 1px solid #ddd; padding-top: 2rem;">
-                            <p>Non trovi quello che cerchi?</p>
-                            <a href="contatti.html" class="btn btn-primary" style="margin-top: 1rem;">Contatta il
+                            <p data-i18n="support_missing">Non trovi quello che cerchi?</p>
+                            <a href="contatti.html" class="btn btn-primary" style="margin-top: 1rem;"
+                                data-i18n="support_contact_btn">Contatta il
                                 Tecnico</a>
                         </div>
                     </div>

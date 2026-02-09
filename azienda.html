@@ -10,19 +10,25 @@
 </head>
 
 <body>
-    <nav id="navbar" class="nav-white" class="nav-white"> <!-- Mypa page navbar always visible -->
+    <nav id="navbar" class="nav-white"> <!-- Mypa page navbar always visible -->
         <div class="container nav-content">
             <a href="index.html" class="logo">
                 <img src="images/Logo.png" alt="Mypa Logo">
             </a>
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="azienda.html">Azienda</a></li>
-                <li><a href="prodotti.html">Prodotti</a></li>
-                <li><a href="applicazioni.html">Applicazioni</a></li>
-                <li><a href="supporto.html">Supporto Tecnico</a></li>
-                <li><a href="contatti.html">Contatti</a></li>
+                <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+                <li><a href="azienda.html" data-i18n="nav_azienda">Azienda</a></li>
+                <li><a href="prodotti.html" data-i18n="nav_prodotti">Prodotti</a></li>
+                <li><a href="applicazioni.html" data-i18n="nav_applicazioni">Applicazioni</a></li>
+                <li><a href="supporto.html" data-i18n="nav_supporto">Supporto Tecnico</a></li>
+                <li><a href="contatti.html" data-i18n="nav_contatti">Contatti</a></li>
             </ul>
+            <div class="lang-switcher">
+                <button onclick="setLanguage('it')" class="lang-btn" data-lang="it">IT</button>
+                <button onclick="setLanguage('en')" class="lang-btn" data-lang="en">EN</button>
+                <button onclick="setLanguage('tr')" class="lang-btn" data-lang="tr">TR</button>
+                <button onclick="setLanguage('zh')" class="lang-btn" data-lang="zh">ZH</button>
+            </div>
             <div class="mobile-menu-btn" id="mobile-menu-btn">
                 <span></span>
                 <span></span>
@@ -34,25 +40,32 @@
     <main style="padding-top: var(--nav-height);">
         <section class="section-padding">
             <div class="container">
-                <h1 class="section-title" style="text-align: left;">La nostra storia, la vostra affidabilità.</h1>
+                <h1 class="section-title" style="text-align: left;" data-i18n="azienda_title">La nostra storia, la
+                    vostra affidabilità.</h1>
                 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; margin-top: 3rem;">
                     <div>
-                        <p>Mypa nasce dalla passione per la meccanica di precisione e dalla volontà di fornire al
+                        <p data-i18n="azienda_p1">Mypa nasce dalla passione per la meccanica di precisione e dalla
+                            volontà di fornire al
                             mercato del riscaldamento componenti che fossero sinonimo di durata. Oggi siamo una realtà
                             proiettata nel futuro, ma con i piedi ben saldi nella tradizione manifatturiera italiana.
                         </p>
-                        <p style="margin-top: 1.5rem;">La nostra sede è il centro di un ecosistema dove innovazione e
+                        <p style="margin-top: 1.5rem;" data-i18n="azienda_p2">La nostra sede è il centro di un
+                            ecosistema dove innovazione e
                             controllo manuale convivono per creare prodotti d'eccellenza. Ogni singola pompa che esce
                             dai nostri stabilimenti è il risultato di un processo rigoroso e di un controllo qualità che
                             non accetta compromessi.</p>
                     </div>
                     <div style="background-color: var(--bg-light); border-radius: 8px; padding: 2rem;">
-                        <h3 style="margin-bottom: 1.5rem;">I Nostri Valori</h3>
+                        <h3 style="margin-bottom: 1.5rem;" data-i18n="azienda_values_title">I Nostri Valori</h3>
                         <ul style="display: flex; flex-direction: column; gap: 1rem;">
-                            <li><strong>Precisione:</strong> Tolleranze rigorose per prestazioni costanti.</li>
-                            <li><strong>Affidabilità:</strong> Prodotti progettati per durare decenni.</li>
-                            <li><strong>Servizio:</strong> Supporto diretto OEM e post-vendita.</li>
-                            <li><strong>Made in Italy:</strong> Controllo totale sulla filiera produttiva.</li>
+                            <li data-i18n="azienda_value_1"><strong>Precisione:</strong> Tolleranze rigorose per
+                                prestazioni costanti.</li>
+                            <li data-i18n="azienda_value_2"><strong>Affidabilità:</strong> Prodotti progettati per
+                                durare decenni.</li>
+                            <li data-i18n="azienda_value_3"><strong>Servizio:</strong> Supporto diretto OEM e
+                                post-vendita.</li>
+                            <li data-i18n="azienda_value_4"><strong>Made in Italy:</strong> Controllo totale sulla
+                                filiera produttiva.</li>
                         </ul>
                     </div>
                 </div>
@@ -61,10 +74,12 @@
 
         <section class="section-padding" style="background-color: var(--primary); color: var(--white);">
             <div class="container">
-                <h2 style="color: var(--white); text-align: center; margin-bottom: 3rem;">Oltre 40 anni di evoluzione
+                <h2 style="color: var(--white); text-align: center; margin-bottom: 3rem;"
+                    data-i18n="azienda_evolution_title">Oltre 40 anni di evoluzione
                 </h2>
                 <div style="max-width: 800px; margin: 0 auto;">
-                    <p style="opacity: 0.8; font-size: 1.1rem; line-height: 1.8;">Fondata per rispondere alla richiesta
+                    <p style="opacity: 0.8; font-size: 1.1rem; line-height: 1.8;" data-i18n="azienda_evolution_p">
+                        Fondata per rispondere alla richiesta
                         di pompe più robuste e precise, Mypa ha saputo evolversi passando dai primi modelli
                         meccanici alle attuali soluzioni integrate con controllo elettronico, rimanendo sempre fedele
                         alla qualità dei materiali originali.</p>
@@ -74,7 +89,49 @@
     </main>
 
     <footer>
-        <!-- Same Footer as index.html -->
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <div class="footer-logo">
+                        <img src="images/Logo.png" alt="Mypa Logo"
+                            style="height: 30px; filter: brightness(0) invert(1);">
+                    </div>
+                    <p style="opacity: 0.6; font-size: 0.9rem;" data-i18n="footer_desc">Specialisti nella produzione di
+                        pompe per bruciatori e sistemi di
+                        pompaggio industriali dal 1980.</p>
+                </div>
+                <div class="footer-links">
+                    <h4 data-i18n="footer_links_rapid">Link Rapidi</h4>
+                    <ul>
+                        <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+                        <li><a href="azienda.html" data-i18n="nav_azienda">Azienda</a></li>
+                        <li><a href="prodotti.html" data-i18n="nav_prodotti">Prodotti</a></li>
+                        <li><a href="applicazioni.html" data-i18n="nav_applicazioni">Applicazioni</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4 data-i18n="footer_support">Supporto</h4>
+                    <ul>
+                        <li><a href="supporto.html">Documentazione</a></li>
+                        <li><a href="supporto.html#faq">FAQ</a></li>
+                        <li><a href="contatti.html" data-i18n="nav_contatti">Contatti</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4 data-i18n="footer_contact">Contatti</h4>
+                    <p style="font-size: 0.9rem; opacity: 0.6;">
+                        Località Placeholder, 123<br>
+                        00000 Città (Prov) - Italy<br>
+                        T: +39 000 000 000<br>
+                        E: sales@Mypa.it
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-i18n="footer_rights">© 2024 Mypa S.r.l. - Tutti i diritti riservati.</p>
+                <p>P.IVA 00000000000 | Made with Precision</p>
+            </div>
+        </div>
     </footer>
     <script type="module" src="src/main.js"></script>
 </body>
