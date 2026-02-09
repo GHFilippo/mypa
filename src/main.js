@@ -15,9 +15,9 @@ function updateProductGrid() {
       const descEl = card.querySelector('p');
       if (descEl) {
         if (typeof data.description === 'object') {
-          descEl.textContent = data.description[currentLang] || data.description['it'];
+          descEl.innerHTML = data.description[currentLang] || data.description['it'];
         } else {
-          descEl.textContent = data.description;
+          descEl.innerHTML = data.description;
         }
       }
 
@@ -25,9 +25,9 @@ function updateProductGrid() {
       const metaValEl = card.querySelector('.prod-card-meta strong');
       if (metaValEl) {
         if (typeof data.range === 'object') {
-          metaValEl.textContent = data.range[currentLang] || data.range['it'];
+          metaValEl.innerHTML = data.range[currentLang] || data.range['it'];
         } else {
-          metaValEl.textContent = data.range;
+          metaValEl.innerHTML = data.range;
         }
       }
     }
@@ -39,12 +39,8 @@ function applyTranslations() {
   elements.forEach(el => {
     const key = el.getAttribute('data-i18n');
     if (translations[currentLang] && translations[currentLang][key]) {
-      // Use innerHTML for keys that might contain <br> (like hero_title)
-      if (key === 'hero_title') {
-        el.innerHTML = translations[currentLang][key];
-      } else {
-        el.textContent = translations[currentLang][key];
-      }
+      // Use innerHTML to allow HTML tags in translations (e.g. <strong>, <br>)
+      el.innerHTML = translations[currentLang][key];
     }
   });
 
