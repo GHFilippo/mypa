@@ -50,6 +50,13 @@ function applyTranslations() {
   // Update HTML lang attribute
   document.documentElement.setAttribute('lang', currentLang);
 
+  // Set text direction for RTL languages
+  if (currentLang === 'ar') {
+    document.documentElement.setAttribute('dir', 'rtl');
+  } else {
+    document.documentElement.setAttribute('dir', 'ltr');
+  }
+
   // Highlight active lang button
   document.querySelectorAll('.lang-btn').forEach(btn => {
     if (btn.getAttribute('data-lang') === currentLang) {
