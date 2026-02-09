@@ -150,5 +150,109 @@ export const productData = {
         range: "Modulazione 1:10",
         description: "Valvole regolatrici per aria, gas città e GPL. Permettono un rapporto di modulazione fino a 1:10, garantendo una combustione pulita ed efficiente anche a carichi ridotti. Rapporto pressione aria/gas stabile.",
         features: ["Modulazione Gas", "Combustione pulita", "Precisione 1:10"]
+    },
+    "IRZ": {
+        title: "Serie IRZ",
+        image: "images/products/IRZ.jpg",
+        pdf: "pdf/IRZ.pdf",
+        range: "Pmax 500 mbar",
+        description: "Regolatore di rapporto aria/gas e zero governor. Mantiene costante il rapporto di miscelazione anche al variare della pressione dell'aria o della richiesta di portata. Disponibile kit per rapporti da 1:2 a 1:10.",
+        features: ["Zero governor", "Rapporto Aria/Gas", "Pmax 500 mbar"]
+    },
+    "IR5": {
+        title: "Serie IR5 (DN 32-100)",
+        image: "images/products/IR5_32_100.jpg",
+        pdf: "pdf/IR5_32_100.pdf",
+        range: "0,5 - 5 bar",
+        description: "Regolatore di pressione gas ad azione diretta con otturatore compensato. Include dispositivi di sicurezza integrati: valvola di sfioro, blocco di massima (OPSO) e blocco di minima (UPSO). Certificato EN 88-2 e EN 334.",
+        features: ["Otturatore compensato", "Sicurezze OPSO/UPSO", "DN 32 - 100"]
+    },
+    "IR3-5": {
+        title: "Serie IR3 / IR5",
+        image: "images/products/IR3-5.jpg",
+        pdf: "pdf/IR3-5.pdf",
+        range: "Uso Domestico/Ind.",
+        description: "Regolatori di pressione per Metano, GPL e gas non corrosivi. Versioni compatte ideali per piccoli impianti. Disponibili con valvola di sfioro e presa di pressione in uscita.",
+        features: ["Compatto", "Filtro in ingresso", "Certificato EN 88-2"]
+    },
+    "IR1-2": {
+        title: "Serie IR1 / IR2",
+        image: "images/products/IR1-2.jpg",
+        pdf: "pdf/IR1-2.pdf",
+        range: "0,5 - 2 bar",
+        description: "Regolatore di pressione a chiusura con vite regolabile. Garantisce una regolazione affidabile basata sulla composizione di forze tra molla, diaframma e pressione a valle.",
+        features: ["Vite micrometrica", "Affidabilità elevata", "0,5 - 2 bar"]
+    },
+    "IR0": {
+        title: "Serie IR0",
+        image: "images/products/IR0.jpg",
+        pdf: "pdf/IR0.pdf",
+        range: "Pmax 0,5 bar",
+        description: "Regolatore di pressione a chiusura per basse pressioni. Ideale per la regolazione finale prima del bruciatore.",
+        features: ["Regolazione fine", "Diaframma sensibile", "Pmax 0,5 bar"]
+    },
+    "IFR3-5": {
+        title: "Serie IFR3 / IFR5",
+        image: "images/products/IFR3-5.jpg",
+        pdf: "pdf/IFR3-5.pdf",
+        range: "Filtro-Regolatore",
+        description: "Dispositivi combinati che integrano un filtro in ingresso e un regolatore di pressione. Massimizzano lo spazio eliminando la necessità di componenti separati. Versioni compatte disponibili.",
+        features: ["Filtro integrato", "Salva spazio", "EN 88-2"]
+    },
+    "IFR1-2": {
+        title: "Serie IFR1 / IFR2",
+        image: "images/products/IFR1-2.jpg",
+        pdf: "pdf/IFR1-2.pdf",
+        range: "0,5 - 2 bar",
+        description: "Filtro-regolatore a chiusura con vite di regolazione e filtro ad alta efficienza incorporato. Protezione e precisione in un unico corpo robusto.",
+        features: ["Combinato", "Filtro alta efficienza", "Costruzione robusta"]
+    },
+    "IFR0": {
+        title: "Serie IFR0",
+        image: "images/products/IFR0.jpg",
+        pdf: "pdf/IFR0.pdf",
+        range: "Pmax 0,5 bar",
+        description: "Filtro-regolatore per basse pressioni con vite di regolazione. Ideale per piccoli bruciatori a gas.",
+        features: ["Bassa pressione", "Economico", "Filtro incluso"]
+    },
+    "IF": {
+        title: "Serie IF (Filtri)",
+        image: "images/products/IF.jpg",
+        pdf: "pdf/IF.pdf",
+        range: "Filtraggio Fine",
+        description: "Filtri gas ad alta capacità. Impediscono il passaggio di polvere e detriti, proteggendo valvole e kit di regolazione. Componente filtrante lavabile e facilmente rimovibile.",
+        features: ["Filtro lavabile", "O-ring resistenti", "Presa pressione standard"]
+    },
+    "IENA": {
+        title: "Serie IENA",
+        image: "images/products/IENA.jpg",
+        pdf: "pdf/IENA.pdf",
+        range: "Riarmo Manuale",
+        description: "Elettrovalvole a riarmo manuale normalmente chiuse. Massima sicurezza: si chiudono in assenza di tensione e richiedono intervento umano per il ripristino. Nessun assorbimento elettrico in stand-by.",
+        features: ["Riarmo manuale", "Zero consumo", "Sicurezza ATEX"]
+    },
+    "IEL1-3-6": {
+        title: "Serie IEL 1/3/6",
+        image: "images/products/IEL1-3-6.jpg",
+        pdf: "pdf/IEL1-3-6.pdf",
+        range: "1 - 3 - 6 bar",
+        description: "Elettrovalvole automatiche normalmente chiuse monostadio. Dotate di regolatore di portata e kit di apertura lenta regolabile (slow opening).",
+        features: ["Apertura lenta", "Regolatore portata", "Alta pressione"]
+    },
+    "IEL03": {
+        title: "Serie IEL03",
+        image: "images/products/IEL03.jpg",
+        pdf: "pdf/IEL03.pdf",
+        range: "360 mbar",
+        description: "Elettrovalvole automatiche per basse pressioni. Possono essere controllate da pressostati, termostati o sistemi di gestione bruciatore.",
+        features: ["Bassa pressione", "Automatica", "Certificata EN 161"]
+    },
+    "IE": {
+        title: "Serie IE",
+        image: "images/products/IE.jpg",
+        pdf: "pdf/IE.pdf",
+        range: "Automatiche",
+        description: "Elettrovalvole automatiche normalmente chiuse serie IE. Aperte quando alimentate, chiuse in assenza di tensione. Semplicità costruttiva per massima affidabilità.",
+        features: ["On/Off rapido", "Versione compatta", "Economica"]
     }
 };
