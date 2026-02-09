@@ -124,10 +124,14 @@
                 <li><a href="contatti.html" data-i18n="nav_contatti">Contatti</a></li>
             </ul>
             <div class="lang-switcher">
-                <button onclick="setLanguage('it')" class="lang-btn" data-lang="it">IT</button>
-                <button onclick="setLanguage('en')" class="lang-btn" data-lang="en">EN</button>
-                <button onclick="setLanguage('tr')" class="lang-btn" data-lang="tr">TR</button>
-                <button onclick="setLanguage('zh')" class="lang-btn" data-lang="zh">ZH</button>
+                <button onclick="setLanguage('it')" class="lang-btn" data-lang="it"><img
+                        src="https://flagcdn.com/20x15/it.png" alt="IT"> IT</button>
+                <button onclick="setLanguage('en')" class="lang-btn" data-lang="en"><img
+                        src="https://flagcdn.com/20x15/gb.png" alt="EN"> EN</button>
+                <button onclick="setLanguage('tr')" class="lang-btn" data-lang="tr"><img
+                        src="https://flagcdn.com/20x15/tr.png" alt="TR"> TR</button>
+                <button onclick="setLanguage('zh')" class="lang-btn" data-lang="zh"><img
+                        src="https://flagcdn.com/20x15/cn.png" alt="ZH"> ZH</button>
             </div>
             <div class="mobile-menu-btn" id="mobile-menu-btn">
                 <span></span>
@@ -141,8 +145,10 @@
         style="padding-top: var(--nav-height); background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/Sfondo.png') no-repeat center center fixed; background-size: cover; color: white;">
         <section class="section-padding" style="padding-top: 12rem;">
             <div class="container">
-                <h1 class="section-title" style="text-align: left; color: white;">Catalogo Tecnico Completo</h1>
-                <p class="section-subtitle" style="text-align: left; margin-left: 0; color: rgba(255,255,255,0.9);">
+                <h1 class="section-title" style="text-align: left; color: white;" data-i18n="prod_page_title">Catalogo
+                    Tecnico Completo</h1>
+                <p class="section-subtitle" style="text-align: left; margin-left: 0; color: rgba(255,255,255,0.9);"
+                    data-i18n="prod_page_subtitle">
                     Oltre 40 anni di ingegneria al
                     servizio del pompaggio di combustibili liquidi e gassosi.</p>
 
@@ -162,11 +168,13 @@
                             <h3>Serie GB / KB</h3>
                             <p>Singolo stadio con filtro estraibile. Compatta e affidabile.</p>
                             <div class="prod-card-meta">
-                                Portata: <strong>20 - 70 l/h</strong>
+                                <span data-i18n="meta_flow">Portata:</span> <strong>20 - 70 l/h</strong>
                             </div>
                             <div class="card-actions">
-                                <a href="contatti.html?ref=GB-KB" class="btn btn-small btn-request">Richiedi Info</a>
-                                <a href="pdf/GB-KB.pdf" target="_blank" class="btn btn-small btn-catalog">Catalogo</a>
+                                <a href="contatti.html?ref=GB-KB" class="btn btn-small btn-request"
+                                    data-i18n="btn_request">Richiedi Info</a>
+                                <a href="pdf/GB-KB.pdf" target="_blank" class="btn btn-small btn-catalog"
+                                    data-i18n="btn_catalog">Catalogo</a>
                             </div>
                         </div>
                         <div class="card animate-in" data-series="GBE-KBE">
@@ -176,11 +184,13 @@
                             <h3>Serie GBE / KBE</h3>
                             <p>Singolo stadio con elettrovalvola di cut-off integrata.</p>
                             <div class="prod-card-meta">
-                                Portata: <strong>20 - 70 l/h</strong>
+                                <span data-i18n="meta_flow">Portata:</span> <strong>20 - 70 l/h</strong>
                             </div>
                             <div class="card-actions">
-                                <a href="contatti.html?ref=GB-KB" class="btn btn-small btn-request">Richiedi Info</a>
-                                <a href="pdf/GBE-KBE.pdf" target="_blank" class="btn btn-small btn-catalog">Catalogo</a>
+                                <a href="contatti.html?ref=GB-KB" class="btn btn-small btn-request"
+                                    data-i18n="btn_request">Richiedi Info</a>
+                                <a href="pdf/GBE-KBE.pdf" target="_blank" class="btn btn-small btn-catalog"
+                                    data-i18n="btn_catalog">Catalogo</a>
                             </div>
                         </div>
                         <div class="card animate-in" data-series="GBE-LE">
@@ -190,11 +200,13 @@
                             <h3>Serie GBE-LE</h3>
                             <p>Low Emissions: riduce le emissioni all'avvio e arresto.</p>
                             <div class="prod-card-meta">
-                                Portata: <strong>20 - 70 l/h</strong>
+                                <span data-i18n="meta_flow">Portata:</span> <strong>20 - 70 l/h</strong>
                             </div>
                             <div class="card-actions">
-                                <a href="contatti.html?ref=GB-KB" class="btn btn-small btn-request">Richiedi Info</a>
-                                <a href="pdf/GBE-LE.pdf" target="_blank" class="btn btn-small btn-catalog">Catalogo</a>
+                                <a href="contatti.html?ref=GB-KB" class="btn btn-small btn-request"
+                                    data-i18n="btn_request">Richiedi Info</a>
+                                <a href="pdf/GBE-LE.pdf" target="_blank" class="btn btn-small btn-catalog"
+                                    data-i18n="btn_catalog">Catalogo</a>
                             </div>
                         </div>
                         <div class="card animate-in" data-series="GBW-KBW">
@@ -204,11 +216,13 @@
                             <h3>Serie GBW / KBW</h3>
                             <p>Autoadescante con 2 stadi di pressione e cut-off.</p>
                             <div class="prod-card-meta">
-                                Portata: <strong>20 - 70 l/h</strong>
+                                <span data-i18n="meta_flow">Portata:</span> <strong>20 - 70 l/h</strong>
                             </div>
                             <div class="card-actions">
-                                <a href="contatti.html?ref=GB-KB" class="btn btn-small btn-request">Richiedi Info</a>
-                                <a href="pdf/GBW-KBW.pdf" target="_blank" class="btn btn-small btn-catalog">Catalogo</a>
+                                <a href="contatti.html?ref=GB-KB" class="btn btn-small btn-request"
+                                    data-i18n="btn_request">Richiedi Info</a>
+                                <a href="pdf/GBW-KBW.pdf" target="_blank" class="btn btn-small btn-catalog"
+                                    data-i18n="btn_catalog">Catalogo</a>
                             </div>
                         </div>
                         <div class="card animate-in" data-series="P-K">
@@ -218,11 +232,13 @@
                             <h3>Serie P / K</h3>
                             <p>Singolo stadio per portate medio-alte.</p>
                             <div class="prod-card-meta">
-                                Portata: <strong>95 - 130 l/h</strong>
+                                <span data-i18n="meta_flow">Portata:</span> <strong>95 - 130 l/h</strong>
                             </div>
                             <div class="card-actions">
-                                <a href="contatti.html?ref=P-K" class="btn btn-small btn-request">Richiedi Info</a>
-                                <a href="pdf/P-K.pdf" target="_blank" class="btn btn-small btn-catalog">Catalogo</a>
+                                <a href="contatti.html?ref=P-K" class="btn btn-small btn-request"
+                                    data-i18n="btn_request">Richiedi Info</a>
+                                <a href="pdf/P-K.pdf" target="_blank" class="btn btn-small btn-catalog"
+                                    data-i18n="btn_catalog">Catalogo</a>
                             </div>
                         </div>
                         <div class="card animate-in" data-series="PE-KE">
@@ -232,11 +248,13 @@
                             <h3>Serie PE / KE</h3>
                             <p>Singolo stadio con elettrovalvola cut-off per portate elevate.</p>
                             <div class="prod-card-meta">
-                                Portata: <strong>95 - 130 l/h</strong>
+                                <span data-i18n="meta_flow">Portata:</span> <strong>95 - 130 l/h</strong>
                             </div>
                             <div class="card-actions">
-                                <a href="contatti.html?ref=PE-KE" class="btn btn-small btn-request">Richiedi Info</a>
-                                <a href="pdf/PE-KE.pdf" target="_blank" class="btn btn-small btn-catalog">Catalogo</a>
+                                <a href="contatti.html?ref=PE-KE" class="btn btn-small btn-request"
+                                    data-i18n="btn_request">Richiedi Info</a>
+                                <a href="pdf/PE-KE.pdf" target="_blank" class="btn btn-small btn-catalog"
+                                    data-i18n="btn_catalog">Catalogo</a>
                             </div>
                         </div>
                         <div class="card animate-in" data-series="PN">
@@ -246,11 +264,13 @@
                             <h3>Serie PN</h3>
                             <p>Versatilità per sistemi monotubo e bitubo.</p>
                             <div class="prod-card-meta">
-                                Portata: <strong>30 - 140 l/h</strong>
+                                <span data-i18n="meta_flow">Portata:</span> <strong>30 - 140 l/h</strong>
                             </div>
                             <div class="card-actions">
-                                <a href="contatti.html?ref=PN" class="btn btn-small btn-request">Richiedi Info</a>
-                                <a href="pdf/PN.pdf" target="_blank" class="btn btn-small btn-catalog">Catalogo</a>
+                                <a href="contatti.html?ref=PN" class="btn btn-small btn-request"
+                                    data-i18n="btn_request">Richiedi Info</a>
+                                <a href="pdf/PN.pdf" target="_blank" class="btn btn-small btn-catalog"
+                                    data-i18n="btn_catalog">Catalogo</a>
                             </div>
                         </div>
                     </div>
@@ -272,11 +292,13 @@
                             <h3>Serie AG</h3>
                             <p>Gasolio. Autoadescante con mozzo ø32 o flangia ø54.</p>
                             <div class="prod-card-meta">
-                                Portata: <strong>50 - 280 l/h</strong>
+                                <span data-i18n="meta_flow">Portata:</span> <strong>50 - 280 l/h</strong>
                             </div>
                             <div class="card-actions">
-                                <a href="contatti.html?ref=AG" class="btn btn-small btn-request">Richiedi Info</a>
-                                <a href="pdf/AG.pdf" target="_blank" class="btn btn-small btn-catalog">Catalogo</a>
+                                <a href="contatti.html?ref=AG" class="btn btn-small btn-request"
+                                    data-i18n="btn_request">Richiedi Info</a>
+                                <a href="pdf/AG.pdf" target="_blank" class="btn btn-small btn-catalog"
+                                    data-i18n="btn_catalog">Catalogo</a>
                             </div>
                         </div>
                         <div class="card animate-in" data-series="AN">
@@ -286,11 +308,13 @@
                             <h3>Serie AN</h3>
                             <p>Gasolio e Nafta. Design robusto autoadescante.</p>
                             <div class="prod-card-meta">
-                                Portata: <strong>65 - 210 l/h</strong>
+                                <span data-i18n="meta_flow">Portata:</span> <strong>65 - 210 l/h</strong>
                             </div>
                             <div class="card-actions">
-                                <a href="contatti.html?ref=AN" class="btn btn-small btn-request">Richiedi Info</a>
-                                <a href="pdf/AN.pdf" target="_blank" class="btn btn-small btn-catalog">Catalogo</a>
+                                <a href="contatti.html?ref=AN" class="btn btn-small btn-request"
+                                    data-i18n="btn_request">Richiedi Info</a>
+                                <a href="pdf/AN.pdf" target="_blank" class="btn btn-small btn-catalog"
+                                    data-i18n="btn_catalog">Catalogo</a>
                             </div>
                         </div>
                         <div class="card animate-in" data-series="G">
@@ -300,11 +324,13 @@
                             <h3>Serie G</h3>
                             <p>Attacchi per manometro e vacuometro integrati.</p>
                             <div class="prod-card-meta">
-                                Portata: <strong>50 - 380 l/h</strong>
+                                <span data-i18n="meta_flow">Portata:</span> <strong>50 - 380 l/h</strong>
                             </div>
                             <div class="card-actions">
-                                <a href="contatti.html?ref=G" class="btn btn-small btn-request">Richiedi Info</a>
-                                <a href="pdf/G.pdf" target="_blank" class="btn btn-small btn-catalog">Catalogo</a>
+                                <a href="contatti.html?ref=G" class="btn btn-small btn-request"
+                                    data-i18n="btn_request">Richiedi Info</a>
+                                <a href="pdf/G.pdf" target="_blank" class="btn btn-small btn-catalog"
+                                    data-i18n="btn_catalog">Catalogo</a>
                             </div>
                         </div>
                         <div class="card animate-in">
@@ -314,11 +340,13 @@
                             <h3>Serie N / NR</h3>
                             <p>Nafta alta densità. Predisposta per cartuccia riscaldante.</p>
                             <div class="prod-card-meta">
-                                Portata: <strong>80 - 420 l/h</strong>
+                                <span data-i18n="meta_flow">Portata:</span> <strong>80 - 420 l/h</strong>
                             </div>
                             <div class="card-actions">
-                                <a href="contatti.html?ref=N-NR" class="btn btn-small btn-request">Richiedi Info</a>
-                                <a href="pdf/N-NR.pdf" target="_blank" class="btn btn-small btn-catalog">Catalogo</a>
+                                <a href="contatti.html?ref=N-NR" class="btn btn-small btn-request"
+                                    data-i18n="btn_request">Richiedi Info</a>
+                                <a href="pdf/N-NR.pdf" target="_blank" class="btn btn-small btn-catalog"
+                                    data-i18n="btn_catalog">Catalogo</a>
                             </div>
                         </div>
                         <div class="card animate-in" data-series="ITP">
@@ -328,11 +356,13 @@
                             <h3>Serie ITP</h3>
                             <p>Per grandi impianti. Robusta anche con nafta pesante.</p>
                             <div class="prod-card-meta">
-                                Portata: <strong>350 - 1380 l/h</strong>
+                                <span data-i18n="meta_flow">Portata:</span> <strong>350 - 1380 l/h</strong>
                             </div>
                             <div class="card-actions">
-                                <a href="contatti.html?ref=ITP" class="btn btn-small btn-request">Richiedi Info</a>
-                                <a href="pdf/ITP.pdf" target="_blank" class="btn btn-small btn-catalog">Catalogo</a>
+                                <a href="contatti.html?ref=ITP" class="btn btn-small btn-request"
+                                    data-i18n="btn_request">Richiedi Info</a>
+                                <a href="pdf/ITP.pdf" target="_blank" class="btn btn-small btn-catalog"
+                                    data-i18n="btn_catalog">Catalogo</a>
                             </div>
                         </div>
                     </div>
@@ -354,11 +384,13 @@
                             <h3>Serie ITV</h3>
                             <p>Bassa pressione con valvola di sicurezza. Estrema silenziosità.</p>
                             <div class="prod-card-meta">
-                                Portata: <strong>480 - 8250 l/h</strong>
+                                <span data-i18n="meta_flow">Portata:</span> <strong>480 - 8250 l/h</strong>
                             </div>
                             <div class="card-actions">
-                                <a href="contatti.html?ref=ITV" class="btn btn-small btn-request">Richiedi Info</a>
-                                <a href="pdf/ITV.pdf" target="_blank" class="btn btn-small btn-catalog">Catalogo</a>
+                                <a href="contatti.html?ref=ITV" class="btn btn-small btn-request"
+                                    data-i18n="btn_request">Richiedi Info</a>
+                                <a href="pdf/ITV.pdf" target="_blank" class="btn btn-small btn-catalog"
+                                    data-i18n="btn_catalog">Catalogo</a>
                             </div>
                         </div>
                         <div class="card animate-in" data-series="ITVH">
@@ -368,11 +400,13 @@
                             <h3>Serie ITVH</h3>
                             <p>Alta pressione (10-35 bar) con regolatore integrato.</p>
                             <div class="prod-card-meta">
-                                Portata: <strong>Fino a 12000 l/h</strong>
+                                <span data-i18n="meta_flow">Portata:</span> <strong>Fino a 12000 l/h</strong>
                             </div>
                             <div class="card-actions">
-                                <a href="contatti.html?ref=ITVH" class="btn btn-small btn-request">Richiedi Info</a>
-                                <a href="pdf/ITVH.pdf" target="_blank" class="btn btn-small btn-catalog">Catalogo</a>
+                                <a href="contatti.html?ref=ITVH" class="btn btn-small btn-request"
+                                    data-i18n="btn_request">Richiedi Info</a>
+                                <a href="pdf/ITVH.pdf" target="_blank" class="btn btn-small btn-catalog"
+                                    data-i18n="btn_catalog">Catalogo</a>
                             </div>
                         </div>
                         <div class="card animate-in" data-series="ITR-ITRV">
@@ -382,12 +416,14 @@
                             <h3>Serie ITR / ITRV</h3>
                             <p>Combustibili liquidi e oli non corrosivi. Temp fino a 250°C.</p>
                             <div class="prod-card-meta">
-                                Range Pressione: <strong>1 - 30 bar</strong>
+                                <span data-i18n="meta_pressure_range">Range Pressione:</span> <strong>1 - 30
+                                    bar</strong>
                             </div>
                             <div class="card-actions">
-                                <a href="contatti.html?ref=ITR-ITRV" class="btn btn-small btn-request">Richiedi
-                                    Info</a>
-                                <a href="pdf/ITRV.pdf" target="_blank" class="btn btn-small btn-catalog">Catalogo</a>
+                                <a href="contatti.html?ref=ITR-ITRV" class="btn btn-small btn-request"
+                                    data-i18n="btn_request">Richiedi Info</a>
+                                <a href="pdf/ITRV.pdf" target="_blank" class="btn btn-small btn-catalog"
+                                    data-i18n="btn_catalog">Catalogo</a>
                             </div>
                         </div>
                         <div class="card animate-in" data-series="ITRP-ITRE">
@@ -397,12 +433,14 @@
                             <h3>Serie ITRP / ITRE</h3>
                             <p>Regolazione per ugello con ritorno o camma elettronica.</p>
                             <div class="prod-card-meta">
-                                Specialità: <strong>Modulazione Avanzata</strong>
+                                <span data-i18n="meta_specialty">Specialità:</span> <strong>Modulazione
+                                    Avanzata</strong>
                             </div>
                             <div class="card-actions">
-                                <a href="contatti.html?ref=ITRP-ITRE" class="btn btn-small btn-request">Richiedi
-                                    Info</a>
-                                <a href="pdf/ITRE.pdf" target="_blank" class="btn btn-small btn-catalog">Catalogo</a>
+                                <a href="contatti.html?ref=ITRP-ITRE" class="btn btn-small btn-request"
+                                    data-i18n="btn_request">Richiedi Info</a>
+                                <a href="pdf/ITRE.pdf" target="_blank" class="btn btn-small btn-catalog"
+                                    data-i18n="btn_catalog">Catalogo</a>
                             </div>
                         </div>
                         <div class="card animate-in" data-series="ITM">
@@ -412,11 +450,13 @@
                             <h3>Serie ITM</h3>
                             <p>Regolazione manuale della pressione. Robustezza industriale.</p>
                             <div class="prod-card-meta">
-                                Portata: <strong>Oli non corrosivi</strong>
+                                <span data-i18n="meta_flow">Portata:</span> <strong>Oli non corrosivi</strong>
                             </div>
                             <div class="card-actions">
-                                <a href="contatti.html?ref=ITM" class="btn btn-small btn-request">Richiedi Info</a>
-                                <a href="pdf/ITM.pdf" target="_blank" class="btn btn-small btn-catalog">Catalogo</a>
+                                <a href="contatti.html?ref=ITM" class="btn btn-small btn-request"
+                                    data-i18n="btn_request">Richiedi Info</a>
+                                <a href="pdf/ITM.pdf" target="_blank" class="btn btn-small btn-catalog"
+                                    data-i18n="btn_catalog">Catalogo</a>
                             </div>
                         </div>
                     </div>
@@ -435,61 +475,79 @@
                             <div class="card-image"><img src="images/products/IRZ.jpg" alt="Serie IRZ"></div>
                             <h3>Serie IRZ</h3>
                             <p>Zero governor e regolatore di rapporto aria/gas.</p>
-                            <div class="prod-card-meta">Pmax: <strong>500 mbar</strong></div>
+                            <div class="prod-card-meta"><span data-i18n="meta_pmax">Pmax:</span> <strong>500
+                                    mbar</strong></div>
                             <div class="card-actions">
-                                <a href="contatti.html?ref=IRZ" class="btn btn-small btn-request">Richiedi Info</a>
-                                <a href="pdf/IRZ.pdf" target="_blank" class="btn btn-small btn-catalog">Catalogo</a>
+                                <a href="contatti.html?ref=IRZ" class="btn btn-small btn-request"
+                                    data-i18n="btn_request">Richiedi Info</a>
+                                <a href="pdf/IRZ.pdf" target="_blank" class="btn btn-small btn-catalog"
+                                    data-i18n="btn_catalog">Catalogo</a>
                             </div>
                         </div>
                         <div class="card animate-in" data-series="IR5">
                             <div class="card-image"><img src="images/products/IR5_32_100.jpg" alt="Serie IR5"></div>
                             <h3>Serie IR5</h3>
                             <p>Regolatore ad azione diretta con sicurezze OPSO/UPSO.</p>
-                            <div class="prod-card-meta">DN: <strong>32 - 100</strong></div>
+                            <div class="prod-card-meta"><span data-i18n="meta_dn">DN:</span> <strong>32 - 100</strong>
+                            </div>
                             <div class="card-actions">
-                                <a href="contatti.html?ref=IR5" class="btn btn-small btn-request">Richiedi Info</a>
-                                <a href="pdf/IR5_32_100.pdf" target="_blank"
-                                    class="btn btn-small btn-catalog">Catalogo</a>
+                                <a href="contatti.html?ref=IR5" class="btn btn-small btn-request"
+                                    data-i18n="btn_request">Richiedi Info</a>
+                                <a href="pdf/IR5_32_100.pdf" target="_blank" class="btn btn-small btn-catalog"
+                                    data-i18n="btn_catalog">Catalogo</a>
                             </div>
                         </div>
                         <div class="card animate-in" data-series="IR3-5">
                             <div class="card-image"><img src="images/products/IR3-5.jpg" alt="Serie IR3-5"></div>
                             <h3>Serie IR3 / IR5</h3>
                             <p>Regolatori compatti per uso domestico e industriale.</p>
-                            <div class="prod-card-meta">Certificato: <strong>EN 88-2</strong></div>
+                            <div class="prod-card-meta"><span data-i18n="meta_cert">Certificato:</span> <strong>EN
+                                    88-2</strong></div>
                             <div class="card-actions">
-                                <a href="contatti.html?ref=IR3-5" class="btn btn-small btn-request">Richiedi Info</a>
-                                <a href="pdf/IR3-5.pdf" target="_blank" class="btn btn-small btn-catalog">Catalogo</a>
+                                <a href="contatti.html?ref=IR3-5" class="btn btn-small btn-request"
+                                    data-i18n="btn_request">Richiedi Info</a>
+                                <a href="pdf/IR3-5.pdf" target="_blank" class="btn btn-small btn-catalog"
+                                    data-i18n="btn_catalog">Catalogo</a>
                             </div>
                         </div>
                         <div class="card animate-in" data-series="ITG-ITGS">
                             <div class="card-image"><img src="images/products/ITGS.jpg" alt="Serie ITG/ITGS"></div>
                             <h3>Serie ITG / ITGS</h3>
                             <p>Valvole regolatrici aria/gas con modulazione 1:10.</p>
-                            <div class="prod-card-meta">Modulazione: <strong>1:10</strong></div>
+                            <div class="prod-card-meta"><span data-i18n="meta_modulation">Modulazione:</span>
+                                <strong>1:10</strong>
+                            </div>
                             <div class="card-actions">
-                                <a href="contatti.html?ref=ITG-ITGS" class="btn btn-small btn-request">Richiedi Info</a>
-                                <a href="pdf/ITGS.pdf" target="_blank" class="btn btn-small btn-catalog">Catalogo</a>
+                                <a href="contatti.html?ref=ITG-ITGS" class="btn btn-small btn-request"
+                                    data-i18n="btn_request">Richiedi Info</a>
+                                <a href="pdf/ITGS.pdf" target="_blank" class="btn btn-small btn-catalog"
+                                    data-i18n="btn_catalog">Catalogo</a>
                             </div>
                         </div>
                         <div class="card animate-in" data-series="IR1-2">
                             <div class="card-image"><img src="images/products/IR1-2.jpg" alt="Serie IR1-2"></div>
                             <h3>Serie IR1 / IR2</h3>
                             <p>Regolatore a chiusura con vite micrometrica.</p>
-                            <div class="prod-card-meta">Pmax: <strong>2 bar</strong></div>
+                            <div class="prod-card-meta"><span data-i18n="meta_pmax">Pmax:</span> <strong>2 bar</strong>
+                            </div>
                             <div class="card-actions">
-                                <a href="contatti.html?ref=IR1-2" class="btn btn-small btn-request">Richiedi Info</a>
-                                <a href="pdf/IR1-2.pdf" target="_blank" class="btn btn-small btn-catalog">Catalogo</a>
+                                <a href="contatti.html?ref=IR1-2" class="btn btn-small btn-request"
+                                    data-i18n="btn_request">Richiedi Info</a>
+                                <a href="pdf/IR1-2.pdf" target="_blank" class="btn btn-small btn-catalog"
+                                    data-i18n="btn_catalog">Catalogo</a>
                             </div>
                         </div>
                         <div class="card animate-in" data-series="IR0">
                             <div class="card-image"><img src="images/products/IR0.jpg" alt="Serie IR0"></div>
                             <h3>Serie IR0</h3>
                             <p>Regolatore di pressione a chiusura per basse pressioni.</p>
-                            <div class="prod-card-meta">Pmax: <strong>0,5 bar</strong></div>
+                            <div class="prod-card-meta"><span data-i18n="meta_pmax">Pmax:</span> <strong>0,5
+                                    bar</strong></div>
                             <div class="card-actions">
-                                <a href="contatti.html?ref=IR0" class="btn btn-small btn-request">Richiedi Info</a>
-                                <a href="pdf/IR0.pdf" target="_blank" class="btn btn-small btn-catalog">Catalogo</a>
+                                <a href="contatti.html?ref=IR0" class="btn btn-small btn-request"
+                                    data-i18n="btn_request">Richiedi Info</a>
+                                <a href="pdf/IR0.pdf" target="_blank" class="btn btn-small btn-catalog"
+                                    data-i18n="btn_catalog">Catalogo</a>
                             </div>
                         </div>
                     </div>
@@ -508,40 +566,53 @@
                             <div class="card-image"><img src="images/products/IFR3-5.jpg" alt="Serie IFR3-5"></div>
                             <h3>Serie IFR3 / IFR5</h3>
                             <p>Filtro-regolatore compatto salva spazio.</p>
-                            <div class="prod-card-meta">Certificato: <strong>EN 88-2</strong></div>
+                            <div class="prod-card-meta"><span data-i18n="meta_cert">Certificato:</span> <strong>EN
+                                    88-2</strong></div>
                             <div class="card-actions">
-                                <a href="contatti.html?ref=IFR3-5" class="btn btn-small btn-request">Richiedi Info</a>
-                                <a href="pdf/IFR3-5.pdf" target="_blank" class="btn btn-small btn-catalog">Catalogo</a>
+                                <a href="contatti.html?ref=IFR3-5" class="btn btn-small btn-request"
+                                    data-i18n="btn_request">Richiedi Info</a>
+                                <a href="pdf/IFR3-5.pdf" target="_blank" class="btn btn-small btn-catalog"
+                                    data-i18n="btn_catalog">Catalogo</a>
                             </div>
                         </div>
                         <div class="card animate-in" data-series="IFR1-2">
                             <div class="card-image"><img src="images/products/IFR1-2.jpg" alt="Serie IFR1-2"></div>
                             <h3>Serie IFR1 / IFR2</h3>
                             <p>Filtro-regolatore a chiusura ad alta efficienza.</p>
-                            <div class="prod-card-meta">Portata: <strong>Alta Efficienza</strong></div>
+                            <div class="prod-card-meta"><span data-i18n="meta_flow">Portata:</span> <strong>Alta
+                                    Efficienza</strong></div>
                             <div class="card-actions">
-                                <a href="contatti.html?ref=IFR1-2" class="btn btn-small btn-request">Richiedi Info</a>
-                                <a href="pdf/IFR1-2.pdf" target="_blank" class="btn btn-small btn-catalog">Catalogo</a>
+                                <a href="contatti.html?ref=IFR1-2" class="btn btn-small btn-request"
+                                    data-i18n="btn_request">Richiedi Info</a>
+                                <a href="pdf/IFR1-2.pdf" target="_blank" class="btn btn-small btn-catalog"
+                                    data-i18n="btn_catalog">Catalogo</a>
                             </div>
                         </div>
                         <div class="card animate-in" data-series="IF">
                             <div class="card-image"><img src="images/products/IF.jpg" alt="Serie IF"></div>
                             <h3>Serie IF (Filtri)</h3>
                             <p>Filtri gas ad alta capacità con elemento lavabile.</p>
-                            <div class="prod-card-meta">Manutenzione: <strong>Lavabile</strong></div>
+                            <div class="prod-card-meta"><span data-i18n="meta_maint">Manutenzione:</span>
+                                <strong>Lavabile</strong>
+                            </div>
                             <div class="card-actions">
-                                <a href="contatti.html?ref=IF" class="btn btn-small btn-request">Richiedi Info</a>
-                                <a href="pdf/IF.pdf" target="_blank" class="btn btn-small btn-catalog">Catalogo</a>
+                                <a href="contatti.html?ref=IF" class="btn btn-small btn-request"
+                                    data-i18n="btn_request">Richiedi Info</a>
+                                <a href="pdf/IF.pdf" target="_blank" class="btn btn-small btn-catalog"
+                                    data-i18n="btn_catalog">Catalogo</a>
                             </div>
                         </div>
                         <div class="card animate-in" data-series="IFR0">
                             <div class="card-image"><img src="images/products/IFR0.jpg" alt="Serie IFR0"></div>
                             <h3>Serie IFR0</h3>
                             <p>Filtro-regolatore per basse pressioni a chiusura.</p>
-                            <div class="prod-card-meta">Pmax: <strong>0,5 bar</strong></div>
+                            <div class="prod-card-meta"><span data-i18n="meta_pmax">Pmax:</span> <strong>0,5
+                                    bar</strong></div>
                             <div class="card-actions">
-                                <a href="contatti.html?ref=IFR0" class="btn btn-small btn-request">Richiedi Info</a>
-                                <a href="pdf/IFR0.pdf" target="_blank" class="btn btn-small btn-catalog">Catalogo</a>
+                                <a href="contatti.html?ref=IFR0" class="btn btn-small btn-request"
+                                    data-i18n="btn_request">Richiedi Info</a>
+                                <a href="pdf/IFR0.pdf" target="_blank" class="btn btn-small btn-catalog"
+                                    data-i18n="btn_catalog">Catalogo</a>
                             </div>
                         </div>
                     </div>
@@ -560,48 +631,63 @@
                             <div class="card-image"><img src="images/products/IENA.jpg" alt="Serie IENA"></div>
                             <h3>Serie IENA</h3>
                             <p>Elettrovalvola a riarmo manuale per massima sicurezza.</p>
-                            <div class="prod-card-meta">Riarmo: <strong>Manuale</strong></div>
+                            <div class="prod-card-meta"><span data-i18n="meta_reset">Riarmo:</span>
+                                <strong>Manuale</strong>
+                            </div>
                             <div class="card-actions">
-                                <a href="contatti.html?ref=IENA" class="btn btn-small btn-request">Richiedi Info</a>
-                                <a href="pdf/IENA.pdf" target="_blank" class="btn btn-small btn-catalog">Catalogo</a>
+                                <a href="contatti.html?ref=IENA" class="btn btn-small btn-request"
+                                    data-i18n="btn_request">Richiedi Info</a>
+                                <a href="pdf/IENA.pdf" target="_blank" class="btn btn-small btn-catalog"
+                                    data-i18n="btn_catalog">Catalogo</a>
                             </div>
                         </div>
                         <div class="card animate-in" data-series="IEL1-3-6">
                             <div class="card-image"><img src="images/products/IEL1-3-6.jpg" alt="Serie IEL"></div>
                             <h3>Serie IEL 1/3/6</h3>
                             <p>Automatica normalmente chiusa con apertura lenta.</p>
-                            <div class="prod-card-meta">Pmax: <strong>Fino a 6 bar</strong></div>
+                            <div class="prod-card-meta"><span data-i18n="meta_pmax">Pmax:</span> <strong>Fino a 6
+                                    bar</strong></div>
                             <div class="card-actions">
-                                <a href="contatti.html?ref=IEL1-3-6" class="btn btn-small btn-request">Richiedi Info</a>
-                                <a href="pdf/IEL1-3-6.pdf" target="_blank"
-                                    class="btn btn-small btn-catalog">Catalogo</a>
+                                <a href="contatti.html?ref=IEL1-3-6" class="btn btn-small btn-request"
+                                    data-i18n="btn_request">Richiedi Info</a>
+                                <a href="pdf/IEL1-3-6.pdf" target="_blank" class="btn btn-small btn-catalog"
+                                    data-i18n="btn_catalog">Catalogo</a>
                             </div>
                         </div>
                         <div class="card animate-in" data-series="IE">
                             <div class="card-image"><img src="images/products/IE.jpg" alt="Serie IE"></div>
                             <h3>Serie IE</h3>
                             <p>Elettrovalvola automatica compatta e affidabile.</p>
-                            <div class="prod-card-meta">Tipo: <strong>Automatica</strong></div>
+                            <div class="prod-card-meta"><span data-i18n="meta_type">Tipo:</span>
+                                <strong>Automatica</strong>
+                            </div>
                             <div class="card-actions">
-                                <a href="contatti.html?ref=IE" class="btn btn-small btn-request">Richiedi Info</a>
-                                <a href="pdf/IE.pdf" target="_blank" class="btn btn-small btn-catalog">Catalogo</a>
+                                <a href="contatti.html?ref=IE" class="btn btn-small btn-request"
+                                    data-i18n="btn_request">Richiedi Info</a>
+                                <a href="pdf/IE.pdf" target="_blank" class="btn btn-small btn-catalog"
+                                    data-i18n="btn_catalog">Catalogo</a>
                             </div>
                         </div>
                         <div class="card animate-in" data-series="IEL03">
                             <div class="card-image"><img src="images/products/IEL03.jpg" alt="Serie IEL03"></div>
                             <h3>Serie IEL03</h3>
                             <p>Elettrovalvola automatica per basse pressioni.</p>
-                            <div class="prod-card-meta">Pmax: <strong>360 mbar</strong></div>
+                            <div class="prod-card-meta"><span data-i18n="meta_pmax">Pmax:</span> <strong>360
+                                    mbar</strong></div>
                             <div class="card-actions">
-                                <a href="contatti.html?ref=IEL03" class="btn btn-small btn-request">Richiedi Info</a>
-                                <a href="pdf/IEL03.pdf" target="_blank" class="btn btn-small btn-catalog">Catalogo</a>
+                                <a href="contatti.html?ref=IEL03" class="btn btn-small btn-request"
+                                    data-i18n="btn_request">Richiedi Info</a>
+                                <a href="pdf/IEL03.pdf" target="_blank" class="btn btn-small btn-catalog"
+                                    data-i18n="btn_catalog">Catalogo</a>
                             </div>
                         </div>
                         <div class="card animate-in" data-series="PT">
                             <div class="card-image"><img src="images/products/PT.jpg" alt="Serie PT"></div>
                             <h3>Serie PT</h3>
                             <p>Elettrovalvola cut-off con tenuta perfetta.</p>
-                            <div class="prod-card-meta">Funzione: <strong>Sicurezza Tenuta</strong></div>
+                            <div class="prod-card-meta"><span data-i18n="meta_function">Funzione:</span>
+                                <strong>Sicurezza Tenuta</strong>
+                            </div>
                             <div class="card-actions">
                                 <a href="contatti.html" class="btn btn-small btn-request"
                                     data-i18n="btn_request">Richiedi Info</a>
@@ -631,18 +717,20 @@
                     <h2 id="modal-title"></h2>
                 </div>
                 <div class="modal-info">
-                    <h4>Descrizione Tecnica</h4>
+                    <h4 data-i18n="modal_desc_title">Descrizione Tecnica</h4>
                     <p id="modal-desc"></p>
                 </div>
                 <div class="modal-specs">
                     <div class="spec-item">
-                        <label>Portata/Range</label>
+                        <label data-i18n="modal_range_label">Portata/Range</label>
                         <span id="modal-range"></span>
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <a id="modal-pdf" href="#" target="_blank" class="btn btn-catalog">Catalogo Completo</a>
-                    <a id="modal-request" href="#" class="btn btn-primary">Richiedi Info</a>
+                    <a id="modal-pdf" href="#" target="_blank" class="btn btn-catalog"
+                        data-i18n="modal_full_catalog">Catalogo Completo</a>
+                    <a id="modal-request" href="#" class="btn btn-primary" data-i18n="modal_request_info">Richiedi
+                        Info</a>
                 </div>
             </div>
         </div>

@@ -230,10 +230,13 @@ nav:not(.scrolled):not(.nav-white) .nav-links a {
 }
 
 .lang-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
   background: transparent;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 0.2rem 0.5rem;
-  font-size: 0.75rem;
+  padding: 0.3rem 0.6rem;
+  font-size: 0.8rem;
   font-weight: 600;
   cursor: pointer;
   border-radius: 4px;
@@ -241,9 +244,16 @@ nav:not(.scrolled):not(.nav-white) .nav-links a {
   color: var(--text-dark);
 }
 
+.lang-btn img {
+  width: 18px;
+  height: auto;
+  border-radius: 2px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
 #navbar:not(.scrolled) .lang-btn {
   color: white;
-  border-color: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.4);
 }
 
 .lang-btn:hover {
@@ -255,7 +265,9 @@ nav:not(.scrolled):not(.nav-white) .nav-links a {
 .lang-btn.active {
   background: var(--primary);
   color: white !important;
-  border-color: var(--primary);
+  border-color: var(--accent);
+  /* Make it pop */
+  box-shadow: 0 0 0 2px rgba(215, 25, 32, 0.2);
 }
 
 @media (max-width: 768px) {

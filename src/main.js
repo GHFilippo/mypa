@@ -4,6 +4,36 @@ import { translations } from './translations.js';
 // --- Multilingual System ---
 let currentLang = localStorage.getItem('mypa_lang') || 'it';
 
+
+// Function to update product grid cards
+function updateProductGrid() {
+  document.querySelectorAll('.card[data-series]').forEach(card => {
+    const seriesId = card.getAttribute('data-series');
+    if (productData[seriesId]) {
+      const data = productData[seriesId];
+      // Description
+      const descEl = card.querySelector('p');
+      if (descEl) {
+        if (typeof data.description === 'object') {
+          descEl.textContent = data.description[currentLang] || data.description['it'];
+        } else {
+          descEl.textContent = data.description;
+        }
+      }
+
+      // Meta Value (Range)
+      const metaValEl = card.querySelector('.prod-card-meta strong');
+      if (metaValEl) {
+        if (typeof data.range === 'object') {
+          metaValEl.textContent = data.range[currentLang] || data.range['it'];
+        } else {
+          metaValEl.textContent = data.range;
+        }
+      }
+    }
+  });
+}
+
 function applyTranslations() {
   const elements = document.querySelectorAll('[data-i18n]');
   elements.forEach(el => {
@@ -17,6 +47,9 @@ function applyTranslations() {
       }
     }
   });
+
+  // Update product grid dynamic content
+  updateProductGrid();
 
   // Update HTML lang attribute
   document.documentElement.setAttribute('lang', currentLang);
@@ -36,8 +69,7 @@ window.setLanguage = function (lang) {
   localStorage.setItem('mypa_lang', lang);
   applyTranslations();
 
-  // If we are on product page, we might need to re-render modals or dynamic lists
-  // Since we use data-series in cards, the modal populate logic will handle it if we update it
+  // No need to explicitly handle modals here as they are populated on click
 };
 
 // Initialize translations on load
