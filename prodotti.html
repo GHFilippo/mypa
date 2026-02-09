@@ -1,0 +1,528 @@
+<!doctype html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catalogo Prodotti | Mypa - Pompe per Bruciatori e Valvole</title>
+    <style>
+        .product-category {
+            margin-top: 6rem;
+        }
+
+        .category-header {
+            border-left: 5px solid var(--accent);
+            padding-left: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .category-header h2 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .category-header p {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+        }
+
+        .prod-card-meta {
+            margin-top: auto;
+            padding-top: 1.5rem;
+            border-top: 1px solid #eee;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .prod-card-meta strong {
+            color: var(--primary);
+        }
+
+        .card-actions {
+            margin-top: 1.5rem;
+            display: flex;
+            gap: 1rem;
+        }
+
+        .btn-small {
+            padding: 0.5rem 1rem;
+            font-size: 0.75rem;
+            border-radius: 4px;
+            white-space: nowrap;
+        }
+
+        .btn-request {
+            background-color: var(--primary);
+            color: var(--white);
+        }
+
+        .btn-request:hover {
+            background-color: var(--accent);
+        }
+
+        .btn-catalog {
+            background-color: transparent;
+            border: 1px solid var(--primary);
+            color: var(--primary);
+        }
+
+        .btn-catalog:hover {
+            background-color: var(--primary);
+            color: var(--white);
+        }
+
+        .card h3 {
+            font-size: 1.4rem;
+            color: var(--primary);
+            margin-bottom: 0.75rem;
+            border-bottom: 2px solid var(--accent);
+            display: inline-block;
+            padding-bottom: 0.25rem;
+        }
+
+        .card p {
+            min-height: 3.2em;
+        }
+
+        .card-image {
+            width: 100%;
+            height: 200px;
+            margin-bottom: 1.5rem;
+            border-radius: 4px;
+            overflow: hidden;
+            background: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card-image img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            transition: var(--transition);
+        }
+
+        .card:hover .card-image img {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navbar" class="nav-white">
+        <div class="container nav-content">
+            <a href="/" class="logo"><img src="/images/Logo.png" alt="Mypa Logo"></a>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/azienda.html">Azienda</a></li>
+                <li><a href="/prodotti.html">Prodotti</a></li>
+                <li><a href="/applicazioni.html">Applicazioni</a></li>
+                <li><a href="/supporto.html">Supporto Tecnico</a></li>
+                <li><a href="/contatti.html">Contatti</a></li>
+            </ul>
+            <div class="mobile-menu-btn" id="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main
+        style="padding-top: var(--nav-height); background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/images/Sfondo.png') no-repeat center center fixed; background-size: cover; color: white;">
+        <section class="section-padding" style="padding-top: 12rem;">
+            <div class="container">
+                <h1 class="section-title" style="text-align: left; color: white;">Catalogo Tecnico Completo</h1>
+                <p class="section-subtitle" style="text-align: left; margin-left: 0; color: rgba(255,255,255,0.9);">
+                    Oltre 40 anni di ingegneria al
+                    servizio del pompaggio di combustibili liquidi e gassosi.</p>
+
+                <!-- CATEGORY 1: Pompe per Gasolio e Kerosene -->
+                <div class="product-category">
+                    <div class="category-header">
+                        <h2 class="section-title" style="text-align: left; color: white;">Pompe per Gasolio e Kerosene
+                        </h2>
+                        <p style="color: rgba(255,255,255,0.8);">Soluzioni standard e avanzate per bruciatori di piccola
+                            e media potenza.</p>
+                    </div>
+                    <div class="grid-3">
+                        <div class="card animate-in" data-series="GB-KB">
+                            <div class="card-image">
+                                <img src="/images/products/GB-KB.jpg" alt="Serie GB/KB">
+                            </div>
+                            <h3>Serie GB / KB</h3>
+                            <p>Singolo stadio con filtro estraibile. Compatta e affidabile.</p>
+                            <div class="prod-card-meta">
+                                Portata: <strong>20 - 70 l/h</strong>
+                            </div>
+                            <div class="card-actions">
+                                <a href="/contatti.html?ref=GB-KB" class="btn btn-small btn-request">Richiedi Info</a>
+                                <a href="/pdf/GB-KB.pdf" target="_blank" class="btn btn-small btn-catalog">Catalogo</a>
+                            </div>
+                        </div>
+                        <div class="card animate-in" data-series="GBE-KBE">
+                            <div class="card-image">
+                                <img src="/images/products/GBE-KBE.jpg" alt="Serie GBE/KBE">
+                            </div>
+                            <h3>Serie GBE / KBE</h3>
+                            <p>Singolo stadio con elettrovalvola di cut-off integrata.</p>
+                            <div class="prod-card-meta">
+                                Portata: <strong>20 - 70 l/h</strong>
+                            </div>
+                            <div class="card-actions">
+                                <a href="/contatti.html?ref=GB-KB" class="btn btn-small btn-request">Richiedi Info</a>
+                                <a href="/pdf/GBE-KBE.pdf" target="_blank"
+                                    class="btn btn-small btn-catalog">Catalogo</a>
+                            </div>
+                        </div>
+                        <div class="card animate-in" data-series="GBE-LE">
+                            <div class="card-image">
+                                <img src="/images/products/GBE-LE.jpg" alt="Serie GBE-LE">
+                            </div>
+                            <h3>Serie GBE-LE</h3>
+                            <p>Low Emissions: riduce le emissioni all'avvio e arresto.</p>
+                            <div class="prod-card-meta">
+                                Portata: <strong>20 - 70 l/h</strong>
+                            </div>
+                            <div class="card-actions">
+                                <a href="/contatti.html?ref=GB-KB" class="btn btn-small btn-request">Richiedi Info</a>
+                                <a href="/pdf/GBE-LE.pdf" target="_blank" class="btn btn-small btn-catalog">Catalogo</a>
+                            </div>
+                        </div>
+                        <div class="card animate-in" data-series="GBW-KBW">
+                            <div class="card-image">
+                                <img src="/images/products/GBW-KBW.jpg" alt="Serie GBW/KBW">
+                            </div>
+                            <h3>Serie GBW / KBW</h3>
+                            <p>Autoadescante con 2 stadi di pressione e cut-off.</p>
+                            <div class="prod-card-meta">
+                                Portata: <strong>20 - 70 l/h</strong>
+                            </div>
+                            <div class="card-actions">
+                                <a href="/contatti.html?ref=GB-KB" class="btn btn-small btn-request">Richiedi Info</a>
+                                <a href="/pdf/GBW-KBW.pdf" target="_blank"
+                                    class="btn btn-small btn-catalog">Catalogo</a>
+                            </div>
+                        </div>
+                        <div class="card animate-in" data-series="P-K">
+                            <div class="card-image">
+                                <img src="/images/products/P-K.jpg" alt="Serie P/K">
+                            </div>
+                            <h3>Serie P / K</h3>
+                            <p>Singolo stadio per portate medio-alte.</p>
+                            <div class="prod-card-meta">
+                                Portata: <strong>95 - 130 l/h</strong>
+                            </div>
+                            <div class="card-actions">
+                                <a href="/contatti.html?ref=P-K" class="btn btn-small btn-request">Richiedi Info</a>
+                                <a href="/pdf/P-K.pdf" target="_blank" class="btn btn-small btn-catalog">Catalogo</a>
+                            </div>
+                        </div>
+                        <div class="card animate-in" data-series="PE-KE">
+                            <div class="card-image">
+                                <img src="/images/products/PE-KE.jpg" alt="Serie PE/KE">
+                            </div>
+                            <h3>Serie PE / KE</h3>
+                            <p>Singolo stadio con elettrovalvola cut-off per portate elevate.</p>
+                            <div class="prod-card-meta">
+                                Portata: <strong>95 - 130 l/h</strong>
+                            </div>
+                            <div class="card-actions">
+                                <a href="/contatti.html?ref=PE-KE" class="btn btn-small btn-request">Richiedi Info</a>
+                                <a href="/pdf/PE-KE.pdf" target="_blank" class="btn btn-small btn-catalog">Catalogo</a>
+                            </div>
+                        </div>
+                        <div class="card animate-in" data-series="PN">
+                            <div class="card-image">
+                                <img src="/images/products/PN.jpg" alt="Serie PN">
+                            </div>
+                            <h3>Serie PN</h3>
+                            <p>Versatilità per sistemi monotubo e bitubo.</p>
+                            <div class="prod-card-meta">
+                                Portata: <strong>30 - 140 l/h</strong>
+                            </div>
+                            <div class="card-actions">
+                                <a href="/contatti.html?ref=PN" class="btn btn-small btn-request">Richiedi Info</a>
+                                <a href="/pdf/PN.pdf" target="_blank" class="btn btn-small btn-catalog">Catalogo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CATEGORY 2: Pompe per Gasolio e Nafta -->
+                <div class="product-category">
+                    <div class="category-header" style="margin-top: 6rem;">
+                        <h2 class="section-title" style="text-align: left; color: white;">Pompe per Gasolio e Nafta</h2>
+                        <p style="color: rgba(255,255,255,0.8);">Pompaggio robusto per applicazioni commerciali e
+                            industriali pesanti.</p>
+                    </div>
+                    <div class="grid-3">
+                        <div class="card animate-in" data-series="AG">
+                            <div class="card-image">
+                                <img src="/images/products/AG.jpg" alt="Serie AG">
+                            </div>
+                            <h3>Serie AG</h3>
+                            <p>Gasolio. Autoadescante con mozzo ø32 o flangia ø54.</p>
+                            <div class="prod-card-meta">
+                                Portata: <strong>50 - 280 l/h</strong>
+                            </div>
+                            <div class="card-actions">
+                                <a href="/contatti.html?ref=AG" class="btn btn-small btn-request">Richiedi Info</a>
+                                <a href="/pdf/AG.pdf" target="_blank" class="btn btn-small btn-catalog">Catalogo</a>
+                            </div>
+                        </div>
+                        <div class="card animate-in" data-series="AN">
+                            <div class="card-image">
+                                <img src="/images/products/AN.jpg" alt="Serie AN">
+                            </div>
+                            <h3>Serie AN</h3>
+                            <p>Gasolio e Nafta. Design robusto autoadescante.</p>
+                            <div class="prod-card-meta">
+                                Portata: <strong>65 - 210 l/h</strong>
+                            </div>
+                            <div class="card-actions">
+                                <a href="/contatti.html?ref=AN" class="btn btn-small btn-request">Richiedi Info</a>
+                                <a href="/pdf/AN.pdf" target="_blank" class="btn btn-small btn-catalog">Catalogo</a>
+                            </div>
+                        </div>
+                        <div class="card animate-in" data-series="G">
+                            <div class="card-image">
+                                <img src="/images/products/G.jpg" alt="Serie G">
+                            </div>
+                            <h3>Serie G</h3>
+                            <p>Attacchi per manometro e vacuometro integrati.</p>
+                            <div class="prod-card-meta">
+                                Portata: <strong>50 - 380 l/h</strong>
+                            </div>
+                            <div class="card-actions">
+                                <a href="/contatti.html?ref=G" class="btn btn-small btn-request">Richiedi Info</a>
+                                <a href="/pdf/G.pdf" target="_blank" class="btn btn-small btn-catalog">Catalogo</a>
+                            </div>
+                        </div>
+                        <div class="card animate-in">
+                            <div class="card-image">
+                                <img src="/images/products/N-NR.jpg" alt="Serie N / NR">
+                            </div>
+                            <h3>Serie N / NR</h3>
+                            <p>Nafta alta densità. Predisposta per cartuccia riscaldante.</p>
+                            <div class="prod-card-meta">
+                                Portata: <strong>80 - 420 l/h</strong>
+                            </div>
+                            <div class="card-actions">
+                                <a href="/contatti.html?ref=N-NR" class="btn btn-small btn-request">Richiedi Info</a>
+                                <a href="/pdf/N-NR.pdf" target="_blank" class="btn btn-small btn-catalog">Catalogo</a>
+                            </div>
+                        </div>
+                        <div class="card animate-in" data-series="ITP">
+                            <div class="card-image">
+                                <img src="/images/products/ITP.jpg" alt="Serie ITP">
+                            </div>
+                            <h3>Serie ITP</h3>
+                            <p>Per grandi impianti. Robusta anche con nafta pesante.</p>
+                            <div class="prod-card-meta">
+                                Portata: <strong>350 - 1380 l/h</strong>
+                            </div>
+                            <div class="card-actions">
+                                <a href="/contatti.html?ref=ITP" class="btn btn-small btn-request">Richiedi Info</a>
+                                <a href="/pdf/ITP.pdf" target="_blank" class="btn btn-small btn-catalog">Catalogo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CATEGORY 3: Soluzioni Industriali e Alta Pressione -->
+                <div class="product-category">
+                    <div class="category-header" style="margin-top: 6rem;">
+                        <h2 class="section-title" style="text-align: left; color: white;">Soluzioni Industriali e Alta
+                            Pressione</h2>
+                        <p style="color: rgba(255,255,255,0.8);">Sistemi ad alte prestazioni per bruciatori industriali
+                            e processi complessi.</p>
+                    </div>
+                    <div class="grid-3">
+                        <div class="card animate-in" data-series="ITV">
+                            <div class="card-image">
+                                <img src="/images/products/ITV.jpg" alt="Serie ITV">
+                            </div>
+                            <h3>Serie ITV</h3>
+                            <p>Bassa pressione con valvola di sicurezza. Estrema silenziosità.</p>
+                            <div class="prod-card-meta">
+                                Portata: <strong>480 - 8250 l/h</strong>
+                            </div>
+                            <div class="card-actions">
+                                <a href="/contatti.html?ref=ITV" class="btn btn-small btn-request">Richiedi Info</a>
+                                <a href="/pdf/ITV.pdf" target="_blank" class="btn btn-small btn-catalog">Catalogo</a>
+                            </div>
+                        </div>
+                        <div class="card animate-in" data-series="ITVH">
+                            <div class="card-image">
+                                <img src="/images/products/ITVH.jpg" alt="Serie ITVH">
+                            </div>
+                            <h3>Serie ITVH</h3>
+                            <p>Alta pressione (10-35 bar) con regolatore integrato.</p>
+                            <div class="prod-card-meta">
+                                Portata: <strong>Fino a 12000 l/h</strong>
+                            </div>
+                            <div class="card-actions">
+                                <a href="/contatti.html?ref=ITVH" class="btn btn-small btn-request">Richiedi Info</a>
+                                <a href="/pdf/ITVH.pdf" target="_blank" class="btn btn-small btn-catalog">Catalogo</a>
+                            </div>
+                        </div>
+                        <div class="card animate-in" data-series="ITR-ITRV">
+                            <div class="card-image">
+                                <img src="/images/products/ITRV.jpg" alt="Serie ITR / ITRV">
+                            </div>
+                            <h3>Serie ITR / ITRV</h3>
+                            <p>Combustibili liquidi e oli non corrosivi. Temp fino a 250°C.</p>
+                            <div class="prod-card-meta">
+                                Range Pressione: <strong>1 - 30 bar</strong>
+                            </div>
+                            <div class="card-actions">
+                                <a href="/contatti.html?ref=ITR-ITRV" class="btn btn-small btn-request">Richiedi
+                                    Info</a>
+                                <a href="/pdf/ITRV.pdf" target="_blank" class="btn btn-small btn-catalog">Catalogo</a>
+                            </div>
+                        </div>
+                        <div class="card animate-in" data-series="ITRP-ITRE">
+                            <div class="card-image">
+                                <img src="/images/products/ITRE.jpg" alt="Serie ITRP / ITRE">
+                            </div>
+                            <h3>Serie ITRP / ITRE</h3>
+                            <p>Regolazione per ugello con ritorno o camma elettronica.</p>
+                            <div class="prod-card-meta">
+                                Specialità: <strong>Modulazione Avanzata</strong>
+                            </div>
+                            <div class="card-actions">
+                                <a href="/contatti.html?ref=ITRP-ITRE" class="btn btn-small btn-request">Richiedi
+                                    Info</a>
+                                <a href="/pdf/ITRE.pdf" target="_blank" class="btn btn-small btn-catalog">Catalogo</a>
+                            </div>
+                        </div>
+                        <div class="card animate-in" data-series="ITM">
+                            <div class="card-image">
+                                <img src="/images/products/ITM.jpg" alt="Serie ITM">
+                            </div>
+                            <h3>Serie ITM</h3>
+                            <p>Regolazione manuale della pressione. Robustezza industriale.</p>
+                            <div class="prod-card-meta">
+                                Portata: <strong>Oli non corrosivi</strong>
+                            </div>
+                            <div class="card-actions">
+                                <a href="/contatti.html?ref=ITM" class="btn btn-small btn-request">Richiedi Info</a>
+                                <a href="/pdf/ITM.pdf" target="_blank" class="btn btn-small btn-catalog">Catalogo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CATEGORY 4: Valvole e Gas -->
+                <div class="product-category">
+                    <div class="category-header" style="margin-top: 6rem;">
+                        <h2 class="section-title" style="text-align: left; color: white;">Valvole e Controllo Gas</h2>
+                        <p style="color: rgba(255,255,255,0.8);">Componenti di precisione per la gestione sicura di aria
+                            e gas.</p>
+                    </div>
+                    <div class="grid-3">
+                        <div class="card animate-in" data-series="PT">
+                            <div class="card-image">
+                                <img src="/images/products/PT.jpg" alt="Serie PT">
+                            </div>
+                            <h3>Serie PT</h3>
+                            <p>Elettrovalvola normally closed con tenuta perfetta.</p>
+                            <div class="prod-card-meta">
+                                Funzione: <strong>Cut-off Tenuta</strong>
+                            </div>
+                            <div class="card-actions">
+                                <a href="/contatti.html?ref=PT" class="btn btn-small btn-request">Richiedi Info</a>
+                                <a href="/pdf/PT.pdf" target="_blank" class="btn btn-small btn-catalog">Catalogo</a>
+                            </div>
+                        </div>
+                        <div class="card animate-in" data-series="ITG-ITGS">
+                            <div class="card-image">
+                                <img src="/images/products/ITGS.jpg" alt="Serie ITG / ITGS">
+                            </div>
+                            <h3>Serie ITG / ITGS</h3>
+                            <p>Valvole per aria, gas città e GPL. Rapporto 1:10.</p>
+                            <div class="prod-card-meta">
+                                Modulazione: <strong>1:10</strong>
+                            </div>
+                            <div class="card-actions">
+                                <a href="/contatti.html?ref=ITG-ITGS" class="btn btn-small btn-request">Richiedi
+                                    Info</a>
+                                <a href="/pdf/ITGS.pdf" target="_blank" class="btn btn-small btn-catalog">Catalogo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center" style="margin-top: 6rem;">
+                    <a href="/contatti.html" class="btn btn-primary btn-lg">Richiedi Schede Tecniche Complete</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Product Modal -->
+    <div id="product-modal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <div class="modal-left">
+                <img id="modal-img" src="" alt="">
+            </div>
+            <div class="modal-right">
+                <div class="modal-header">
+                    <h2 id="modal-title"></h2>
+                </div>
+                <div class="modal-info">
+                    <h4>Descrizione Tecnica</h4>
+                    <p id="modal-desc"></p>
+                </div>
+                <div class="modal-specs">
+                    <div class="spec-item">
+                        <label>Portata/Range</label>
+                        <span id="modal-range"></span>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a id="modal-pdf" href="#" target="_blank" class="btn btn-catalog">Catalogo Completo</a>
+                    <a id="modal-request" href="#" class="btn btn-primary">Richiedi Info</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer style="margin-top: 0;">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <div class="footer-logo"
+                        style="color: white; font-weight: 800; font-size: 1.5rem; letter-spacing: -1px;">MYPA <span
+                            style="font-weight: 300; opacity: 0.8;">S.r.l.</span></div>
+                    <p style="opacity: 0.6; font-size: 0.9rem;">Eccellenza meccanica italiana dal 1980.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Link Veloci</h4>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/azienda.html">Azienda</a></li>
+                        <li><a href="/prodotti.html">Prodotti</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Supporto</h4>
+                    <ul>
+                        <li><a href="/supporto.html">FAQ</a></li>
+                        <li><a href="/contatti.html">Richiedi Assistenza</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Mypa S.r.l.</p>
+            </div>
+        </div>
+    </footer>
+    <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
