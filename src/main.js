@@ -71,7 +71,7 @@ const openModal = (seriesId) => {
   document.getElementById('modal-img').src = data.image;
   document.getElementById('modal-img').alt = data.title;
   document.getElementById('modal-pdf').href = data.pdf;
-  document.getElementById('modal-request').href = `/contatti.html?ref=${seriesId}`;
+  document.getElementById('modal-request').href = `contatti.html?ref=${seriesId}`;
 
   // Show modal
   modal.classList.add('active');
